@@ -1,0 +1,589 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K22 ]
+[d frameptr 4065 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+[v i2___awmod __awmod `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"21 C:\Users\Lecoq\MPLABXProjects\remote.X\lcd.c
+[v _ReadByte ReadByte `(uc  1 e 1 0 ]
+[v i2_ReadByte ReadByte `(uc  1 e 1 0 ]
+"52
+[v _WaitLCD WaitLCD `(v  1 e 1 0 ]
+[v i2_WaitLCD WaitLCD `(v  1 e 1 0 ]
+"66
+[v _WriteNibble WriteNibble `(v  1 e 1 0 ]
+[v i2_WriteNibble WriteNibble `(v  1 e 1 0 ]
+"83
+[v _WriteByte WriteByte `(v  1 e 1 0 ]
+[v i2_WriteByte WriteByte `(v  1 e 1 0 ]
+"89
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"164
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+"171
+[v _LCDGoto LCDGoto `(v  1 e 1 0 ]
+[v i2_LCDGoto LCDGoto `(v  1 e 1 0 ]
+"180
+[v _LCDPutChar LCDPutChar `(v  1 e 1 0 ]
+[v i2_LCDPutChar LCDPutChar `(v  1 e 1 0 ]
+"193
+[v _LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
+[v i2_LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
+"229
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+[v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+"76 C:\Users\Lecoq\MPLABXProjects\remote.X\main.c
+[v _show_debug show_debug `(v  1 e 1 0 ]
+[v i2_show_debug show_debug `(v  1 e 1 0 ]
+"81
+[v _init_debug init_debug `(v  1 e 1 0 ]
+"90
+[v _setup setup `(v  1 e 1 0 ]
+"146
+[v _pedometer pedometer `(v  1 e 1 0 ]
+"157
+[v _flashlight flashlight `(v  1 e 1 0 ]
+"177
+[v _searched searched `(v  1 e 1 0 ]
+"203
+[v _synchronize synchronize `(v  1 e 1 0 ]
+"210
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+"230
+[v _main main `(i  1 e 2 0 ]
+[s S211 . 1 `uc 1 ANSB0 1 0 :1:0 
+`uc 1 ANSB1 1 0 :1:1 
+`uc 1 ANSB2 1 0 :1:2 
+`uc 1 ANSB3 1 0 :1:3 
+`uc 1 ANSB4 1 0 :1:4 
+`uc 1 ANSB5 1 0 :1:5 
+]
+"110 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k22.h
+[u S218 . 1 `S211 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES218  1 e 1 @3897 ]
+"7140
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S171 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"7697
+[s S180 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S189 . 1 `S171 1 . 1 0 `S180 1 . 1 0 ]
+[v _LATBbits LATBbits `VES189  1 e 1 @3978 ]
+[s S308 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"7809
+[s S317 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S326 . 1 `S308 1 . 1 0 `S317 1 . 1 0 ]
+[v _LATCbits LATCbits `VES326  1 e 1 @3979 ]
+"7894
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S586 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"7921
+[s S595 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S604 . 1 `S586 1 . 1 0 `S595 1 . 1 0 ]
+[v _LATDbits LATDbits `VES604  1 e 1 @3980 ]
+[s S131 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"8312
+[s S140 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S149 . 1 `S131 1 . 1 0 `S140 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES149  1 e 1 @3987 ]
+[s S268 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"8534
+[s S277 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S286 . 1 `S268 1 . 1 0 `S277 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES286  1 e 1 @3988 ]
+[s S546 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"8756
+[s S555 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+[u S564 . 1 `S546 1 . 1 0 `S555 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES564  1 e 1 @3989 ]
+[s S348 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"13251
+[s S352 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S360 . 1 `S348 1 . 1 0 `S352 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES360  1 e 1 @4026 ]
+[s S413 . 1 `uc 1 PR2 1 0 :8:0 
+]
+"13311
+[u S415 . 1 `S413 1 . 1 0 ]
+[v _PR2bits PR2bits `VES415  1 e 1 @4027 ]
+[s S376 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+`uc 1 P1M 1 0 :2:6 
+]
+"13363
+[s S380 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S389 . 1 `S376 1 . 1 0 `S380 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES389  1 e 1 @4029 ]
+[s S406 . 1 `uc 1 CCPR1L 1 0 :8:0 
+]
+"13440
+[u S408 . 1 `S406 1 . 1 0 ]
+[v _CCPR1Lbits CCPR1Lbits `VES408  1 e 1 @4030 ]
+[s S228 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"16789
+[s S237 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S246 . 1 `S228 1 . 1 0 `S237 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES246  1 e 1 @4080 ]
+[s S47 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"16879
+[s S50 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S59 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S62 . 1 `S47 1 . 1 0 `S50 1 . 1 0 `S59 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES62  1 e 1 @4081 ]
+[s S82 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"16956
+[s S91 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S100 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S104 . 1 `S82 1 . 1 0 `S91 1 . 1 0 `S100 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES104  1 e 1 @4082 ]
+"73 C:\Users\Lecoq\MPLABXProjects\remote.X\main.c
+[v _steps steps `ui  1 e 2 0 ]
+"173
+[v _kiwi_length kiwi_length `uc  1 e 1 0 ]
+"174
+[v _kiwi_frequence kiwi_frequence `[7]uc  1 e 7 0 ]
+"230
+[v _main main `(i  1 e 2 0 ]
+{
+"237
+} 0
+"90
+[v _setup setup `(v  1 e 1 0 ]
+{
+"143
+} 0
+"81
+[v _init_debug init_debug `(v  1 e 1 0 ]
+{
+"87
+} 0
+"76
+[v _show_debug show_debug `(v  1 e 1 0 ]
+{
+"78
+} 0
+"229 C:\Users\Lecoq\MPLABXProjects\remote.X\lcd.c
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+{
+[v LCDWriteInt@column column `uc  1 a 1 wreg ]
+"230
+[v LCDWriteInt@string string `[3]uc  1 a 3 6 ]
+"229
+[v LCDWriteInt@column column `uc  1 a 1 wreg ]
+[v LCDWriteInt@row row `uc  1 p 1 3 ]
+[v LCDWriteInt@value value `uc  1 p 1 4 ]
+"232
+[v LCDWriteInt@column column `uc  1 a 1 5 ]
+"238
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 42 ]
+[v ___awmod@counter counter `uc  1 a 1 41 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 37 ]
+[v ___awmod@divisor divisor `i  1 p 2 39 ]
+"35
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 43 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 42 ]
+[v ___awdiv@counter counter `uc  1 a 1 41 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 37 ]
+[v ___awdiv@divisor divisor `i  1 p 2 39 ]
+"42
+} 0
+"193 C:\Users\Lecoq\MPLABXProjects\remote.X\lcd.c
+[v _LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
+{
+"195
+[v LCDWriteStr@i i `uc  1 a 1 0 ]
+"193
+[v LCDWriteStr@string string `*.35Cuc  1 p 2 43 ]
+"199
+} 0
+"180
+[v _LCDPutChar LCDPutChar `(v  1 e 1 0 ]
+{
+[v LCDPutChar@data data `uc  1 a 1 wreg ]
+[v LCDPutChar@data data `uc  1 a 1 wreg ]
+"182
+[v LCDPutChar@data data `uc  1 a 1 42 ]
+"184
+} 0
+"171
+[v _LCDGoto LCDGoto `(v  1 e 1 0 ]
+{
+[v LCDGoto@column column `uc  1 a 1 wreg ]
+[v LCDGoto@column column `uc  1 a 1 wreg ]
+[v LCDGoto@row row `uc  1 p 1 42 ]
+"173
+[v LCDGoto@column column `uc  1 a 1 2 ]
+"178
+} 0
+"89
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+"162
+} 0
+"164
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+{
+"169
+} 0
+"83
+[v _WriteByte WriteByte `(v  1 e 1 0 ]
+{
+[v WriteByte@cmd cmd `uc  1 a 1 wreg ]
+[v WriteByte@cmd cmd `uc  1 a 1 wreg ]
+[v WriteByte@data data `uc  1 p 1 40 ]
+"85
+[v WriteByte@cmd cmd `uc  1 a 1 41 ]
+"87
+} 0
+"66
+[v _WriteNibble WriteNibble `(v  1 e 1 0 ]
+{
+[v WriteNibble@cmd cmd `uc  1 a 1 wreg ]
+[v WriteNibble@cmd cmd `uc  1 a 1 wreg ]
+[v WriteNibble@data data `uc  1 p 1 37 ]
+"68
+[v WriteNibble@cmd cmd `uc  1 a 1 39 ]
+"81
+} 0
+"52
+[v _WaitLCD WaitLCD `(v  1 e 1 0 ]
+{
+"54
+[v WaitLCD@status status `uc  1 a 1 38 ]
+"64
+} 0
+"21
+[v _ReadByte ReadByte `(uc  1 e 1 0 ]
+{
+"23
+[v ReadByte@status status `uc  1 a 1 37 ]
+"50
+} 0
+"210 C:\Users\Lecoq\MPLABXProjects\remote.X\main.c
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"217
+[v ISR@i i `i  1 a 2 35 ]
+"227
+} 0
+"203
+[v _synchronize synchronize `(v  1 e 1 0 ]
+{
+"207
+} 0
+"177
+[v _searched searched `(v  1 e 1 0 ]
+{
+"179
+[v searched@i i `i  1 a 2 18 ]
+[v searched@time time `i  1 a 2 16 ]
+"200
+} 0
+"157
+[v _flashlight flashlight `(v  1 e 1 0 ]
+{
+"162
+} 0
+"146
+[v _pedometer pedometer `(v  1 e 1 0 ]
+{
+"154
+} 0
+"76
+[v i2_show_debug show_debug `(v  1 e 1 0 ]
+{
+"78
+} 0
+"229 C:\Users\Lecoq\MPLABXProjects\remote.X\lcd.c
+[v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+{
+[v i2LCDWriteInt@column column `uc  1 a 1 wreg ]
+[v i2LCDWriteInt@string LCDWriteInt `[3]uc  1 a 3 16 ]
+[v i2LCDWriteInt@column column `uc  1 a 1 wreg ]
+[v i2LCDWriteInt@row row `uc  1 p 1 14 ]
+[v i2LCDWriteInt@value value `uc  1 p 1 15 ]
+"232
+[v i2LCDWriteInt@column column `uc  1 a 1 19 ]
+"238
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v i2___awmod __awmod `(i  1 e 2 0 ]
+{
+[v i2___awmod@sign __awmod `uc  1 a 1 5 ]
+[v i2___awmod@counter __awmod `uc  1 a 1 4 ]
+[v i2___awmod@dividend dividend `i  1 p 2 0 ]
+[v i2___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+{
+[v i2___awdiv@quotient __awdiv `i  1 a 2 12 ]
+[v i2___awdiv@sign __awdiv `uc  1 a 1 11 ]
+[v i2___awdiv@counter __awdiv `uc  1 a 1 10 ]
+[v i2___awdiv@dividend dividend `i  1 p 2 6 ]
+[v i2___awdiv@divisor divisor `i  1 p 2 8 ]
+"42
+} 0
+"193 C:\Users\Lecoq\MPLABXProjects\remote.X\lcd.c
+[v i2_LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
+{
+[v i2LCDWriteStr@i LCDWriteStr `uc  1 a 1 10 ]
+[v i2LCDWriteStr@string string `*.35Cuc  1 p 2 6 ]
+"199
+} 0
+"180
+[v i2_LCDPutChar LCDPutChar `(v  1 e 1 0 ]
+{
+[v i2LCDPutChar@data data `uc  1 a 1 wreg ]
+[v i2LCDPutChar@data data `uc  1 a 1 wreg ]
+"182
+[v i2LCDPutChar@data data `uc  1 a 1 5 ]
+"184
+} 0
+"171
+[v i2_LCDGoto LCDGoto `(v  1 e 1 0 ]
+{
+[v i2LCDGoto@column column `uc  1 a 1 wreg ]
+[v i2LCDGoto@column column `uc  1 a 1 wreg ]
+[v i2LCDGoto@row row `uc  1 p 1 5 ]
+"173
+[v i2LCDGoto@column column `uc  1 a 1 10 ]
+"178
+} 0
+"83
+[v i2_WriteByte WriteByte `(v  1 e 1 0 ]
+{
+[v i2WriteByte@cmd cmd `uc  1 a 1 wreg ]
+[v i2WriteByte@cmd cmd `uc  1 a 1 wreg ]
+[v i2WriteByte@data data `uc  1 p 1 3 ]
+"85
+[v i2WriteByte@cmd cmd `uc  1 a 1 4 ]
+"87
+} 0
+"66
+[v i2_WriteNibble WriteNibble `(v  1 e 1 0 ]
+{
+[v i2WriteNibble@cmd cmd `uc  1 a 1 wreg ]
+[v i2WriteNibble@cmd cmd `uc  1 a 1 wreg ]
+[v i2WriteNibble@data data `uc  1 p 1 0 ]
+"68
+[v i2WriteNibble@cmd cmd `uc  1 a 1 2 ]
+"81
+} 0
+"52
+[v i2_WaitLCD WaitLCD `(v  1 e 1 0 ]
+{
+[v i2WaitLCD@status WaitLCD `uc  1 a 1 1 ]
+"64
+} 0
+"21
+[v i2_ReadByte ReadByte `(uc  1 e 1 0 ]
+{
+[v i2ReadByte@status ReadByte `uc  1 a 1 0 ]
+"50
+} 0
