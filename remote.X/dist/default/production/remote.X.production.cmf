@@ -11,6 +11,11 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 DC DC 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
 $dist/default/production\remote.X.production.obj
 cinit CODE 0 16EC 16EC 32 1
 text0 CODE 0 1890 1890 6 1
@@ -52,11 +57,6 @@ intcode CODE 0 8 8 D4 1
 smallconst SMALLCONST 0 1000 1000 1E 1
 dataCOMRAM COMRAM 1 33 33 4 1
 bssCOMRAM COMRAM 1 37 37 2 1
-$C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
-idloc IDLOC 0 200000 200000 8 1
-init CODE 0 DC DC 4 1
-reset_vec CODE 0 0 0 4 1
-config CONFIG 0 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -109,18 +109,18 @@ MEDIUMCONST 189A-FFFF 1
 %LINETAB
 $dist/default/production\remote.X.production.obj
 8 intcode CODE >50:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
-8 intcode CODE >215:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-42 intcode CODE >217:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-48 intcode CODE >218:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-4E intcode CODE >220:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-52 intcode CODE >222:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-5A intcode CODE >223:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-72 intcode CODE >224:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-76 intcode CODE >225:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-86 intcode CODE >223:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-8C intcode CODE >228:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-9C intcode CODE >230:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-A0 intcode CODE >232:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+8 intcode CODE >214:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+42 intcode CODE >216:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+48 intcode CODE >217:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+4E intcode CODE >219:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+52 intcode CODE >221:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+5A intcode CODE >222:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+72 intcode CODE >223:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+76 intcode CODE >224:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+86 intcode CODE >222:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+8C intcode CODE >227:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+9C intcode CODE >229:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+A0 intcode CODE >231:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 174E text31 CODE >21:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
 174E text31 CODE >25:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
 1750 text31 CODE >26:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
@@ -241,25 +241,25 @@ A0 intcode CODE >232:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 17C2 text19 CODE >158:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 17DA text19 CODE >160:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 17DC text19 CODE >161:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-101E text18 CODE >182:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-101E text18 CODE >184:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-102E text18 CODE >187:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1030 text18 CODE >189:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1052 text18 CODE >190:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1090 text18 CODE >192:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1094 text18 CODE >194:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-10AC text18 CODE >195:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-10BA text18 CODE >196:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-10CA text18 CODE >197:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-10DE text18 CODE >194:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-10E4 text18 CODE >187:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1102 text18 CODE >202:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1106 text18 CODE >203:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1108 text18 CODE >204:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-110A text18 CODE >205:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1886 text17 CODE >208:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1886 text17 CODE >211:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-188E text17 CODE >212:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+101E text18 CODE >181:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+101E text18 CODE >183:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+102E text18 CODE >186:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1030 text18 CODE >188:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1052 text18 CODE >189:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1090 text18 CODE >191:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1094 text18 CODE >193:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+10AC text18 CODE >194:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+10BA text18 CODE >195:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+10CA text18 CODE >196:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+10DE text18 CODE >193:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+10E4 text18 CODE >186:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1102 text18 CODE >201:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1106 text18 CODE >202:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1108 text18 CODE >203:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+110A text18 CODE >204:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1886 text17 CODE >207:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1886 text17 CODE >210:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+188E text17 CODE >211:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 171E text15 CODE >21:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
 171E text15 CODE >25:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
 1720 text15 CODE >26:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
@@ -455,35 +455,35 @@ A0 intcode CODE >232:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 153E text1 CODE >138:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 1540 text1 CODE >141:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 1548 text1 CODE >142:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1890 text0 CODE >235:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1890 text0 CODE >237:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-1894 text0 CODE >239:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-16EC cinit CODE >1270:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16EC cinit CODE >1272:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16EC cinit CODE >1275:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16EC cinit CODE >1302:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16EE cinit CODE >1303:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16F0 cinit CODE >1304:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16F2 cinit CODE >1305:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16F4 cinit CODE >1306:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16F6 cinit CODE >1307:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16F8 cinit CODE >1308:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-16FC cinit CODE >1309:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1700 cinit CODE >1310:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1700 cinit CODE >1311:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1702 cinit CODE >1312:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1706 cinit CODE >1313:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1708 cinit CODE >1314:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-170A cinit CODE >1315:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-170C cinit CODE >1319:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-170E cinit CODE >1320:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1710 cinit CODE >1326:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1710 cinit CODE >1328:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1712 cinit CODE >1329:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1714 cinit CODE >1331:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1716 cinit CODE >1332:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-1718 cinit CODE >1333:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
-171A cinit CODE >1334:C:\Users\Lecoq\AppData\Local\Temp\sbe8.
+1890 text0 CODE >234:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1890 text0 CODE >236:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+1894 text0 CODE >238:C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+16EC cinit CODE >1270:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16EC cinit CODE >1272:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16EC cinit CODE >1275:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16EC cinit CODE >1302:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16EE cinit CODE >1303:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16F0 cinit CODE >1304:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16F2 cinit CODE >1305:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16F4 cinit CODE >1306:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16F6 cinit CODE >1307:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16F8 cinit CODE >1308:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+16FC cinit CODE >1309:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1700 cinit CODE >1310:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1700 cinit CODE >1311:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1702 cinit CODE >1312:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1706 cinit CODE >1313:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1708 cinit CODE >1314:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+170A cinit CODE >1315:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+170C cinit CODE >1319:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+170E cinit CODE >1320:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1710 cinit CODE >1326:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1710 cinit CODE >1328:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1712 cinit CODE >1329:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1714 cinit CODE >1331:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1716 cinit CODE >1332:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+1718 cinit CODE >1333:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+171A cinit CODE >1334:C:\Users\Lecoq\AppData\Local\Temp\sdpk.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -505,19 +505,19 @@ __Hspace_1 69 0 ABS 0 - dist/default/production\remote.X.production.obj
 __Hspace_2 0 0 ABS 0 - dist/default/production\remote.X.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\remote.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\remote.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\remote.X.production.obj
 __size_ofi2_ReadByte 0 0 ABS 0 - dist/default/production\remote.X.production.obj
 searched@time 11 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
 ISR@i 24 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
 __Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\remote.X.production.obj
 _LATD F8C 0 ABS 0 - dist/default/production\remote.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+___sp 0 0 STACK 2 stack C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 _main 1890 0 CODE 0 text0 dist/default/production\remote.X.production.obj
 btemp 39 0 COMRAM 1 temp dist/default/production\remote.X.production.obj
 __end_of_LCDWriteInt 15A2 0 CODE 0 text4 dist/default/production\remote.X.production.obj
 __end_of_LCDWriteStr 137C 0 CODE 0 text7 dist/default/production\remote.X.production.obj
-start DC 0 CODE 0 init C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+start DC 0 CODE 0 init C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 WriteByte@cmd 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\remote.X.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\remote.X.production.obj
@@ -545,11 +545,11 @@ __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\remote.X.production.o
 i2WaitLCD@status 2 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
 __end_of_LCDClear 17C2 0 CODE 0 text11 dist/default/production\remote.X.production.obj
 _ReadByte 171E 0 CODE 0 text15 dist/default/production\remote.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
-intlevel0 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
-intlevel1 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
-intlevel2 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
-intlevel3 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+__accesstop 60 0 ABS 0 - C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+intlevel0 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+intlevel1 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+intlevel2 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+intlevel3 0 0 CODE 0 text C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 i2LCDWriteStr@string 7 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\remote.X.production.obj
 __end_of_LCDPutChar 1824 0 CODE 0 text8 dist/default/production\remote.X.production.obj
@@ -568,8 +568,8 @@ __pidataCOMRAM 1896 0 CODE 0 idataCOMRAM dist/default/production\remote.X.produc
 __CFG_PRICLKEN$ON 0 0 ABS 0 - dist/default/production\remote.X.production.obj
 LCDWriteStr@i 30 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
 ___awdiv@dividend 26 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\remote.X.production.obj
 i2___awdiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
 i2LCDWriteInt@value 10 0 COMRAM 1 cstackCOMRAM dist/default/production\remote.X.production.obj
@@ -654,7 +654,7 @@ __Hbank14 0 0 ABS 0 bank14 dist/default/production\remote.X.production.obj
 __Hbank15 0 0 ABS 0 bank15 dist/default/production\remote.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\remote.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\remote.X.production.obj
-__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 i2_WriteByte 17F8 0 CODE 0 text28 dist/default/production\remote.X.production.obj
 __CFG_EBTR0$ON 0 0 ABS 0 - dist/default/production\remote.X.production.obj
 __CFG_EBTR1$ON 0 0 ABS 0 - dist/default/production\remote.X.production.obj
@@ -827,8 +827,8 @@ _LCDWriteInt 154A 0 CODE 0 text4 dist/default/production\remote.X.production.obj
 _LCDWriteStr 12FC 0 CODE 0 text7 dist/default/production\remote.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\remote.X.production.obj
 _show_debug 185A 0 CODE 0 text3 dist/default/production\remote.X.production.obj
-stackhi F37 0 ABS 0 - C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
-stacklo 69 0 ABS 0 - C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+stackhi F37 0 ABS 0 - C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+stacklo 69 0 ABS 0 - C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 __size_of_WaitLCD 0 0 ABS 0 - dist/default/production\remote.X.production.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\remote.X.production.obj
 __size_of_flashlight 0 0 ABS 0 - dist/default/production\remote.X.production.obj
@@ -902,7 +902,7 @@ __Ltext29 0 0 ABS 0 text29 dist/default/production\remote.X.production.obj
 __Ltext30 0 0 ABS 0 text30 dist/default/production\remote.X.production.obj
 __Ltext31 0 0 ABS 0 text31 dist/default/production\remote.X.production.obj
 __end_ofi2_LCDPutChar 1848 0 CODE 0 text26 dist/default/production\remote.X.production.obj
-__ramtop 1000 0 RAM 0 ramtop C:\Users\Lecoq\AppData\Local\Temp\sbe8.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
 _init_debug 177E 0 CODE 0 text2 dist/default/production\remote.X.production.obj
 __end_of_show_debug 186A 0 CODE 0 text3 dist/default/production\remote.X.production.obj
 __Lpowerup DC 0 CODE 0 powerup dist/default/production\remote.X.production.obj

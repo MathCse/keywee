@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.42 build -159332390 
-                                                                                               Thu Jun 01 16:06:05 2017
+                                                                                               Thu Jun 01 16:07:46 2017
 
 Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130522
      1                           	processor	18F46K22
@@ -488,7 +488,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
    474 ;;
    475 ;; *************** function _main *****************
    476 ;; Defined at:
-   477 ;;		line 235 in file "main.c"
+   477 ;;		line 234 in file "main.c"
    478 ;; Parameters:    Size  Location     Type
    479 ;;  argc            2    4[BANK0 ] int 
    480 ;;  argv            3    6[BANK0 ] PTR PTR unsigned char 
@@ -527,7 +527,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
    508  001890                     _main:
    509                           	opt stack 15
    510                           
-   511                           ;main.c: 237: setup();
+   511                           ;main.c: 236: setup();
    512                           
    513                           ;incstack = 0
    514  001890  EC6E  F00A         	call	_setup	;wreg free
@@ -2292,7 +2292,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2198                           
   2199 ;; *************** function _ISR *****************
   2200 ;; Defined at:
-  2201 ;;		line 215 in file "main.c"
+  2201 ;;		line 214 in file "main.c"
   2202 ;; Parameters:    Size  Location     Type
   2203 ;;		None
   2204 ;; Auto vars:     Size  Location     Type
@@ -2351,25 +2351,25 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2252  00003A  CFF8 F022          	movff	tblptru,??_ISR+13
   2253  00003E  CFF5 F023          	movff	tablat,??_ISR+14
   2254                           
-  2255                           ;main.c: 217: if (INTCONbits.INT0IF) { pedometer(); }
+  2255                           ;main.c: 216: if (INTCONbits.INT0IF) { pedometer(); }
   2256  000042  B2F2               	btfsc	intcon,1,c	;volatile
   2257  000044  EC3D  F00C         	call	_pedometer	;wreg free
   2258                           
-  2259                           ;main.c: 218: if (INTCON3bits.INT1IF) { searched(); }
+  2259                           ;main.c: 217: if (INTCON3bits.INT1IF) { searched(); }
   2260  000048  B0F0               	btfsc	intcon3,0,c	;volatile
   2261  00004A  EC0F  F008         	call	_searched	;wreg free
   2262                           
-  2263                           ;main.c: 220: if (INTCON3bits.INT2IF) {
+  2263                           ;main.c: 219: if (INTCON3bits.INT2IF) {
   2264  00004E  A2F0               	btfss	intcon3,1,c	;volatile
   2265  000050  D027               	goto	i2l83
   2266                           
-  2267                           ;main.c: 222: int i = 0;
+  2267                           ;main.c: 221: int i = 0;
   2268  000052  0E00               	movlw	0
   2269  000054  6E25               	movwf	ISR@i+1,c
   2270  000056  0E00               	movlw	0
   2271  000058  6E24               	movwf	ISR@i,c
   2272                           
-  2273                           ;main.c: 223: for (i = 0; i < 30; i++) {
+  2273                           ;main.c: 222: for (i = 0; i < 30; i++) {
   2274  00005A  0E00               	movlw	0
   2275  00005C  6E25               	movwf	ISR@i+1,c
   2276  00005E  0E00               	movlw	0
@@ -2385,11 +2385,11 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2286  000070  D00D               	goto	i2l2432
   2287  000072                     i2l78:
   2288                           
-  2289                           ;main.c: 224: if (!LATBbits.LATB2) { break ; }
+  2289                           ;main.c: 223: if (!LATBbits.LATB2) { break ; }
   2290  000072  A48A               	btfss	3978,2,c	;volatile
   2291  000074  D00B               	goto	i2l2432
   2292                           
-  2293                           ;main.c: 225: _delay(25000);
+  2293                           ;main.c: 224: _delay(25000);
   2294  000076  0E21               	movlw	33
   2295  000078  6E15               	movwf	??_ISR& (0+255),c
   2296  00007A  0E76               	movlw	118
@@ -2404,8 +2404,8 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2305  00008A  D7EB               	goto	i2l2422
   2306  00008C                     i2l2432:
   2307                           
-  2308                           ;main.c: 226: }
-  2309                           ;main.c: 228: if (i == 30) { synchronize(); }
+  2308                           ;main.c: 225: }
+  2309                           ;main.c: 227: if (i == 30) { synchronize(); }
   2310  00008C  0E1E               	movlw	30
   2311  00008E  1824               	xorwf	ISR@i,w,c
   2312  000090  1025               	iorwf	ISR@i+1,w,c
@@ -2415,7 +2415,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2316  00009A  D002               	goto	i2l83
   2317  00009C                     i2l2436:
   2318                           
-  2319                           ;main.c: 230: else { flashlight(); }
+  2319                           ;main.c: 229: else { flashlight(); }
   2320  00009C  ECE1  F00B         	call	_flashlight	;wreg free
   2321  0000A0                     i2l83:
   2322  0000A0  C023  FFF5         	movff	??_ISR+14,tablat
@@ -2461,7 +2461,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2362                           
   2363 ;; *************** function _synchronize *****************
   2364 ;; Defined at:
-  2365 ;;		line 208 in file "main.c"
+  2365 ;;		line 207 in file "main.c"
   2366 ;; Parameters:    Size  Location     Type
   2367 ;;		None
   2368 ;; Auto vars:     Size  Location     Type
@@ -2499,7 +2499,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2395  001886                     _synchronize:
   2396                           	opt stack 21
   2397                           
-  2398                           ;main.c: 211: steps = 0;
+  2398                           ;main.c: 210: steps = 0;
   2399                           
   2400                           ;incstack = 0
   2401  001886  0E00               	movlw	0
@@ -2534,7 +2534,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2430                           
   2431 ;; *************** function _searched *****************
   2432 ;; Defined at:
-  2433 ;;		line 182 in file "main.c"
+  2433 ;;		line 181 in file "main.c"
   2434 ;; Parameters:    Size  Location     Type
   2435 ;;		None
   2436 ;; Auto vars:     Size  Location     Type
@@ -2576,7 +2576,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2467  00101E                     _searched:
   2468                           	opt stack 20
   2469                           
-  2470                           ;main.c: 184: int time = 50, i = 0;
+  2470                           ;main.c: 183: int time = 50, i = 0;
   2471                           
   2472                           ;incstack = 0
   2473  00101E  0E00               	movlw	0
@@ -2588,11 +2588,11 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2479  00102A  0E00               	movlw	0
   2480  00102C  6E13               	movwf	searched@i,c
   2481                           
-  2482                           ;main.c: 187: while (time-- > 0) {
+  2482                           ;main.c: 186: while (time-- > 0) {
   2483  00102E  D05A               	goto	i2l2402
   2484  001030                     i2l2380:
   2485                           
-  2486                           ;main.c: 189: PR2bits.PR2 = kiwi_frequence[time%kiwi_length];
+  2486                           ;main.c: 188: PR2bits.PR2 = kiwi_frequence[time%kiwi_length];
   2487  001030  C011  F001         	movff	searched@time,i2___awmod@dividend
   2488  001034  C012  F002         	movff	searched@time+1,i2___awmod@dividend+1
   2489  001038  C036  F003         	movff	_kiwi_length,i2___awmod@divisor
@@ -2607,7 +2607,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2498  00104E  50DF               	movf	indf2,w,c
   2499  001050  6EBB               	movwf	4027,c	;volatile
   2500                           
-  2501                           ;main.c: 190: CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1
+  2501                           ;main.c: 189: CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1
       +                          )/2) ;
   2502  001052  C036  F003         	movff	_kiwi_length,i2___awmod@divisor
   2503  001056  6A04               	clrf	i2___awmod@divisor+1,c
@@ -2636,10 +2636,10 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2526  00108C  5007               	movf	?i2___awdiv,w,c
   2527  00108E  6EBE               	movwf	4030,c	;volatile
   2528                           
-  2529                           ;main.c: 192: flashlight();
+  2529                           ;main.c: 191: flashlight();
   2530  001090  ECE1  F00B         	call	_flashlight	;wreg free
   2531                           
-  2532                           ;main.c: 194: for (i = 0; i < 10; i++) {
+  2532                           ;main.c: 193: for (i = 0; i < 10; i++) {
   2533  001094  0E00               	movlw	0
   2534  001096  6E14               	movwf	searched@i+1,c
   2535  001098  0E00               	movlw	0
@@ -2655,7 +2655,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2545  0010AA  D01C               	goto	i2l2402
   2546  0010AC                     i2l62:
   2547                           
-  2548                           ;main.c: 195: if (INTCON3bits.INT2IF) { time = 0; break ; }
+  2548                           ;main.c: 194: if (INTCON3bits.INT2IF) { time = 0; break ; }
   2549  0010AC  A2F0               	btfss	intcon3,1,c	;volatile
   2550  0010AE  D005               	goto	i2l2392
   2551  0010B0  0E00               	movlw	0
@@ -2665,7 +2665,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2555  0010B8  D015               	goto	i2l2402
   2556  0010BA                     i2l2392:
   2557                           
-  2558                           ;main.c: 196: _delay(25000);
+  2558                           ;main.c: 195: _delay(25000);
   2559  0010BA  0E21               	movlw	33
   2560  0010BC  6E0F               	movwf	??_searched& (0+255),c
   2561  0010BE  0E76               	movlw	118
@@ -2676,7 +2676,7 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2566  0010C6  D7FC               	bra	i2u174_47
   2567  0010C8  D000               	nop2	
   2568                           
-  2569                           ;main.c: 197: if (i > 5) { CCPR1Lbits.CCPR1L = 0; }
+  2569                           ;main.c: 196: if (i > 5) { CCPR1Lbits.CCPR1L = 0; }
   2570  0010CA  BE14               	btfsc	searched@i+1,7,c
   2571  0010CC  D008               	goto	i2l2398
   2572  0010CE  5014               	movf	searched@i+1,w,c
@@ -2710,16 +2710,16 @@ Microchip Technology Omniscient Code Generator v1.42 (Free mode) build 201704130
   2600  001100  D797               	goto	i2l2380
   2601  001102                     i2l2404:
   2602                           
-  2603                           ;main.c: 198: }
-  2604                           ;main.c: 199: }
-  2605                           ;main.c: 202: CCPR1Lbits.CCPR1L = 0 ;
+  2603                           ;main.c: 197: }
+  2604                           ;main.c: 198: }
+  2605                           ;main.c: 201: CCPR1Lbits.CCPR1L = 0 ;
   2606  001102  0E00               	movlw	0
   2607  001104  6EBE               	movwf	4030,c	;volatile
   2608                           
-  2609                           ;main.c: 203: LATCbits.LATC1 = 0;
+  2609                           ;main.c: 202: LATCbits.LATC1 = 0;
   2610  001106  928B               	bcf	3979,1,c	;volatile
   2611                           
-  2612                           ;main.c: 204: INTCON3bits.INT2IF = 0;
+  2612                           ;main.c: 203: INTCON3bits.INT2IF = 0;
   2613  001108  92F0               	bcf	intcon3,1,c	;volatile
   2614  00110A  0012               	return		;funcret
   2615  00110C                     __end_of_searched:
@@ -4659,7 +4659,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.42 build -159332390 
-Symbol Table                                                                                   Thu Jun 01 16:06:05 2017
+Symbol Table                                                                                   Thu Jun 01 16:07:46 2017
 
             __CFG_CP0$ON 000000              __CFG_CP1$ON 000000              __CFG_CP2$ON 000000  
             __CFG_CP3$ON 000000              ?_LCDPutChar 0001                       l88 1894  

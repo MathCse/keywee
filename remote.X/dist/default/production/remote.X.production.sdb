@@ -74,13 +74,13 @@
 [v _pedometer pedometer `(v  1 e 1 0 ]
 "156
 [v _flashlight flashlight `(v  1 e 1 0 ]
-"182
+"181
 [v _searched searched `(v  1 e 1 0 ]
-"208
+"207
 [v _synchronize synchronize `(v  1 e 1 0 ]
-"215
+"214
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"235
+"234
 [v _main main `(i  1 e 2 0 ]
 [s S211 . 1 `uc 1 ANSB0 1 0 :1:0 
 `uc 1 ANSB1 1 0 :1:1 
@@ -329,14 +329,14 @@
 [v _INTCONbits INTCONbits `VES104  1 e 1 @4082 ]
 "72 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 [v _steps steps `ui  1 e 2 0 ]
-"178
+"177
 [v _kiwi_length kiwi_length `uc  1 e 1 0 ]
-"179
+"178
 [v _kiwi_frequence kiwi_frequence `[3]uc  1 e 3 0 ]
-"235
+"234
 [v _main main `(i  1 e 2 0 ]
 {
-"242
+"241
 } 0
 "89
 [v _setup setup `(v  1 e 1 0 ]
@@ -463,25 +463,25 @@
 [v ReadByte@status status `uc  1 a 1 37 ]
 "50
 } 0
-"215 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+"214 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"222
+"221
 [v ISR@i i `i  1 a 2 35 ]
-"232
+"231
 } 0
-"208
+"207
 [v _synchronize synchronize `(v  1 e 1 0 ]
 {
-"212
+"211
 } 0
-"182
+"181
 [v _searched searched `(v  1 e 1 0 ]
 {
-"184
+"183
 [v searched@i i `i  1 a 2 18 ]
 [v searched@time time `i  1 a 2 16 ]
-"205
+"204
 } 0
 "156
 [v _flashlight flashlight `(v  1 e 1 0 ]

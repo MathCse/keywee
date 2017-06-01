@@ -174,7 +174,6 @@ unsigned int steps = 0;
     #define LA 35 
     #define LA_d 33
     #define SI 31
-
     unsigned char kiwi_length = 3;
     unsigned char kiwi_frequence[3] = {LA, LA, LA};
     
