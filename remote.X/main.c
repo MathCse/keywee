@@ -193,14 +193,14 @@ unsigned int steps = 0;
 
     // Tremble (880)
     #define M_DO 0
-    #define M_DO# 0
+    #define M_DO_d 0
     #define M_RE 0
-    #define M_RE# 0
+    #define M_RE_d 0
     #define M_MI 0
     #define M_FA 0
-    #define M_FA# 0
+    #define M_FA_d 0
     #define M_SOL 0
-    #define M_SOL# 0
+    #define M_SOL_d 0
     #define M_LA 18
 
     unsigned char kiwi_length = 3;

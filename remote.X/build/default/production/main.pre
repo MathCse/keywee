@@ -8777,9 +8777,9 @@ LATCbits.LATC1 = (unsigned char) !LATCbits.LATC1;
 INTCON3bits.INT1IF = 0;
 }
 
-# 173
-unsigned char kiwi_length = 7;
-unsigned char kiwi_frequence[7] = {26, 26, 26, 21, 26, 31, 31};
+# 206
+unsigned char kiwi_length = 3;
+unsigned char kiwi_frequence[3] = {35, 35, 35};
 
 
 void searched(void) {
