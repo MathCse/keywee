@@ -8777,28 +8777,34 @@ LATCbits.LATC1 = (unsigned char) !LATCbits.LATC1;
 INTCON3bits.INT1IF = 0;
 }
 
-# 206
-unsigned char kiwi_length = 3;
-unsigned char kiwi_frequence[3] = {35, 35, 35};
+# 238
+unsigned char kiwi_length = 64;
+unsigned char kiwi_frequence[64] = {
+39, 39, 39, 0, 39, 39, 39, 0,
+39, 39, 39, 39, 35, 35, 35, 35,
+31, 31, 31, 31, 31, 31, 31, 31,
+35, 35, 35, 35 ,35, 35 ,35, 35,
+39, 39, 39, 0, 31, 31, 31, 0,
+35, 35, 35, 0, 35, 35, 35, 0,
+39, 39, 39, 39 ,39, 39 ,39, 39,
+0, 0, 0, 0, 0, 0, 0, 0
+};
 
 
 void searched(void) {
 
-int time = 50, i = 0;
+int time = 0, max_time = 500, i = 0;
 
 
-while (time-- > 0) {
+while (time++ < max_time) {
 
 PR2bits.PR2 = kiwi_frequence[time%kiwi_length];
 CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1)/2) ;
 
 flashlight();
+_delay(15000);
 
-for (i = 0; i < 10; i++) {
-if (INTCON3bits.INT2IF) { time = 0; break ; }
-_delay(25000);
-if (i > 5) { CCPR1Lbits.CCPR1L = 0; }
-}
+# 269
 }
 
 

@@ -203,27 +203,69 @@ unsigned int steps = 0;
     #define M_SOL_d 0
     #define M_LA 18
 
-    unsigned char kiwi_length = 3;
-    unsigned char kiwi_frequence[3] = {LA, LA, LA};
+    //unsigned char kiwi_length = 64;
+    /*unsigned char kiwi_frequence[64] = {
+                                        SI,  0, SI,  0, SI,  0, SI,  0,
+                                        SI,  0,  0,  0,  0,  0,  0,  0,
+                                         0,  0,  0,  0,  0,  0,  0,  0,
+                                         0,  0,  0,  0,  0,  0,  0,  0,
+                                         0,  0,  0,  0,  0,  0,  0,  0,
+                                         0,  0,  0,  0,  0,  0,  0,  0,
+                                         0,  0,  0,  0, 0, 0 ,  LA,  LA
+                                       };
+    */
+    /*
+    unsigned char kiwi_frequence[128] = {
+                                        SI,  0, SI,  0, SI,  0, SI,  0,
+                                        SI,  0,  0,  0, SI,  0,  0,  0,
+                                        SI,  0, SI,  0, SI,  0, SI,  0,
+                                        SI,  0,  0,  0, MI,  0,  0,  0,
+                                        MI,  0, MI,  0, MI,  0, MI,  0,
+                                        MI,  0,  0,  0, RE,  0,  0,  0,
+                                        RE,  0, RE,  0, RE,  0, RE,  0,                                        
+                                        RE,  0,  0,  0, LA,  0,  0,  0,
+                                        SI,  0, SI,  0, SI,  0, SI,  0,
+                                        SI,  0,  0,  0, SI,  0,  0,  0,
+                                        SI,  0, SI,  0, SI,  0, SI,  0,
+                                        SI,  0,  0,  0, MI,  0,  0,  0,
+                                        SI,  0, SI,  0, SI,  0, SI,  0,
+                                        SI,  0,  0,  0, SI,  0,  0,  0,
+                                        SI,  0, SI,  0, SI,  0, SI,  0,
+                                        SI,  0,  0,  0, MI,  0,  0,  0,
+                                       };
+    */
+    /*AU CLAIR DE LA LUNE by Adrien*/
+        unsigned char kiwi_length = 64; 
+        unsigned char kiwi_frequence[64] = {
+                                        SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
+                                        SOL, SOL, SOL, SOL, LA, LA, LA, LA,
+                                        SI, SI, SI, SI, SI, SI, SI, SI,
+                                        LA, LA, LA, LA ,LA, LA ,LA, LA,
+                                        SOL, SOL, SOL, 0, SI, SI, SI, 0,
+                                        LA, LA, LA, 0, LA, LA, LA, 0,
+                                        SOL, SOL, SOL, SOL ,SOL, SOL ,SOL, SOL,                                        
+                                         0,  0,  0,  0,  0,  0,  0,  0
+                                       };
     
 //Mode recherche
     void searched(void) {   
         //Durée maximale de la recherche (environ, en secondes)
-            int time = 50, i = 0;
+            int time = 0, max_time = 500, i = 0;
             
         //Mode recherche
-            while (time-- > 0) {
+            while (time++ < max_time) {
                 //Modification de la PWM
                     PR2bits.PR2 = kiwi_frequence[time%kiwi_length]; //Registre de période pour le timer 2
                     CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1)/2) ; //Rapport cyclique
                 //Clignotement LED
                     flashlight();
+                     _delay(15000);
                 //Temporisation et si le bouton est appuyé, quitter la boucle
-                    for (i = 0; i < 10; i++) { 
-                        if (INTCON3bits.INT2IF) { time = 0; break ; } 
-                        _delay(25000);
-                        if (i > 5) { CCPR1Lbits.CCPR1L = 0; }
-                    }
+                    /*for (i = 0; i < 1; i++) { 
+                        if (INTCON3bits.INT2IF) { time = max_time; break ; } 
+                       _delay(25000);
+                       _delay(25000);
+                    }*/
             }
             
         //Désactivation de la PWM et de la lampe-torche
