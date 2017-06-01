@@ -234,7 +234,7 @@ unsigned int steps = 0;
                                        };
     */
     /*AU CLAIR DE LA LUNE by Adrien*/
-        unsigned char kiwi_length = 64; 
+       /* unsigned char kiwi_length = 64; 
         unsigned char kiwi_frequence[64] = {
                                         SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
                                         SOL, SOL, SOL, SOL, LA, LA, LA, LA,
@@ -244,8 +244,23 @@ unsigned int steps = 0;
                                         LA, LA, LA, 0, LA, LA, LA, 0,
                                         SOL, SOL, SOL, SOL ,SOL, SOL ,SOL, SOL,                                        
                                          0,  0,  0,  0,  0,  0,  0,  0
-                                       };
-    
+                                       };*/
+    /*Mario main Theme by Adrien*/
+        unsigned char kiwi_length = 340;
+        unsigned char kiwi_frequence[340] = {
+         MI, MI, MI, 0, MI, MI, MI, 0, MI, MI, MI, 0, DO, DO, DO, 0, MI, MI, MI, 0, SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
+         DO, DO, DO, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, SI, SI, SI, 0, LA_d, LA_d, LA_d, 0, LA, LA, LA, 0, SOL, SOL, SOL, 0,
+         MI, MI, MI, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, FA, FA, FA, 0, SOL, SOL, SOL, 0, MI, MI, MI, 0, DO, DO, DO, 0, RE, RE, RE, 0, SI, SI, SI, 0,
+         DO, DO, DO, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, SI, SI, SI, 0, LA_d, LA_d, LA_d, 0, LA, LA, LA, 0, SOL, SOL, SOL, 0,
+         MI, MI, MI, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, FA, FA, FA, 0, SOL, SOL, SOL, 0, MI, MI, MI, 0, DO, DO, DO, 0, RE, RE, RE, 0, SI, SI, SI, 0,
+         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, MI, MI, MI, 0, 
+         LA, LA, LA, 0, LA, LA, LA, 0, DO, DO, DO, 0, LA, LA, LA, 0, DO, DO, DO, 0, RE, RE, RE, 0,
+         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, MI, MI, MI, 0, DO, DO, DO, 0, DO, DO, DO, 0, DO, DO, DO, 0,
+         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, MI, MI, MI, 0,
+         LA, LA, LA, 0, LA, LA, LA, 0, DO, DO, DO, 0, LA, LA, LA, 0, DO, DO, DO, 0, RE, RE, RE, 0,
+         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, MI, MI, MI, 0,
+         LA, LA, LA, 0, LA, LA, LA, 0, DO, DO, DO, 0, LA, LA, LA, 0, DO, DO, DO, 0, RE, RE, RE, 0, DO_d, DO_d, DO_d, 0, RE, RE, RE, 0, DO, DO, DO, 0
+    };
 //Mode recherche
     void searched(void) {   
         //Durée maximale de la recherche (environ, en secondes)
