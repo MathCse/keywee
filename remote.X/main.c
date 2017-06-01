@@ -1,4 +1,4 @@
-
+//TEST
 
 
 #include <stdio.h>
@@ -72,31 +72,31 @@
 unsigned int steps = 0;
 
 //TEST - TEST - TEST
-    void show_debug(void) { 
-            LCDWriteInt(0, 1, steps); 
+    void show_debug(void) {
+            LCDWriteInt(0, 1, steps);
     }
 
 //TEST - TEST - TEST
     void init_debug(void) {
             LCDInit();
             LCDClear();
-            LCDGoto(0, 0); 
+            LCDGoto(0, 0);
             LCDWriteStr("Nombre pas");
             show_debug();
     }
 
-//Prépare les registres
-    void setup(void) {   
+//Prï¿½pare les registres
+    void setup(void) {
         //TEST - TEST - TEST
-            init_debug(); 
+            init_debug();
 
-        //Podomètre (interruption prioritaire)
+        //Podomï¿½tre (interruption prioritaire)
             INTCON2bits.INTEDG0 = 1; // Front montant
             INTCONbits.INT0IF = 0 ; //Nettoyage de flag
             TRISBbits.TRISB0 = 0; //Patte en sortie
             LATBbits.LATB0 = 0; //Nettoyage de la valeur
-            TRISBbits.TRISB0 = 1; //Patte en entrée
-            ANSELBbits.ANSB0 = 0; //Entrée en mode numérique
+            TRISBbits.TRISB0 = 1; //Patte en entrï¿½e
+            ANSELBbits.ANSB0 = 0; //Entrï¿½e en mode numï¿½rique
             INTCONbits.INT0E = 1 ; //Activation de l'interruption
 
         //Mode recherche
@@ -104,8 +104,8 @@ unsigned int steps = 0;
             INTCON3bits.INT1IF = 0 ; //Nettoyage de flag
             TRISBbits.TRISB1 = 0; //Patte en sortie
             LATBbits.LATB1 = 0; //Nettoyage de la valeur
-            TRISBbits.TRISB1 = 1; //Patte en entrée
-            ANSELBbits.ANSB1 = 0; //Entrée en mode numérique
+            TRISBbits.TRISB1 = 1; //Patte en entrï¿½e
+            ANSELBbits.ANSB1 = 0; //Entrï¿½e en mode numï¿½rique
             INTCON3bits.INT1E = 1 ; //Activation de l'interruption
 
         //Lampe-torche
@@ -113,17 +113,17 @@ unsigned int steps = 0;
             INTCON3bits.INT2IF = 0 ; //Nettoyage de flag
             TRISBbits.TRISB2 = 0; //Patte en sortie
             LATBbits.LATB2 = 0; //Nettoyage de la valeur
-            TRISBbits.TRISB2 = 1; //Patte en entrée
-            ANSELBbits.ANSB2 = 0; //Entrée en mode numérique
+            TRISBbits.TRISB2 = 1; //Patte en entrï¿½e
+            ANSELBbits.ANSB2 = 0; //Entrï¿½e en mode numï¿½rique
             INTCON3bits.INT2E = 1 ; //Activation de l'interruption
-            
+
         //Initialisation des pattes de sorties
             TRISCbits.RC1 = 0 ;
             LATCbits.LATC1 = 0 ;
 
         //Initialisation du Timer 2
-            T2CONbits.T2OUTPS = 0 ; //Postscaler à 1
-            T2CONbits.T2CKPS = 0b10 ; //Prescaler à 16
+            T2CONbits.T2OUTPS = 0 ; //Postscaler ï¿½ 1
+            T2CONbits.T2CKPS = 0b10 ; //Prescaler ï¿½ 16
             T2CONbits.TMR2ON = 1 ; //Activation du timer
 
         //Initialisation de la PWM
@@ -131,37 +131,37 @@ unsigned int steps = 0;
             CCP1CONbits.P1M = 0 ; //1 seule sortie
             CCP1CONbits.DC1B = 0 ; //LSB du rapport cyclique de la PWM
             CCP1CONbits.CCP1M = 0b1100 ; //Mode PWM
-            CCPR1Lbits.CCPR1L = 0 ; //Mise à 0 de la PWM
+            CCPR1Lbits.CCPR1L = 0 ; //Mise ï¿½ 0 de la PWM
 
         //Activation globales des interruptions
-            INTCONbits.PEIE = 1; //Interruptions périphériques activées
-            INTCONbits.GIE = 1 ; //Interriptions activées
-            
-        //Réinitialisaion du nombre de pas
+            INTCONbits.PEIE = 1; //Interruptions pï¿½riphï¿½riques activï¿½es
+            INTCONbits.GIE = 1 ; //Interriptions activï¿½es
+
+        //Rï¿½initialisaion du nombre de pas
             steps = 0;
     }
 
-//Compte le nombre de pas depuis la dernière synchronisation
+//Compte le nombre de pas depuis la derniï¿½re synchronisation
     void pedometer() {
-        //Incrémentation du nombre de pas
+        //Incrï¿½mentation du nombre de pas
             steps++;
         //Nettoyage du flag
-            INTCONbits.INT0IF = 0 ; //Flag à 0
-        
+            INTCONbits.INT0IF = 0 ; //Flag ï¿½ 0
+
         //TEST - TEST - TEST
-            show_debug(); 
+            show_debug();
     }
 
-//Active ou désactive la lampe-torche
+//Active ou dï¿½sactive la lampe-torche
     void flashlight(void) {
-        //Toggle de l'état de la lampe-torche
+        //Toggle de l'ï¿½tat de la lampe-torche
             LATCbits.LATC1 = (unsigned char) !LATCbits.LATC1; //Inversion de la sortie
         //Nettoyage du flag
-            INTCON3bits.INT1IF = 0; //Flag à 0
+            INTCON3bits.INT1IF = 0; //Flag ï¿½ 0
     }
-    
+
 //Cri du kiwi ou darude sandstorm
-//Fréquence_PWM = (1MHz)/(4 * prescaler * (PR2+1)) 
+//Frï¿½quence_PWM = (1MHz)/(4 * prescaler * (PR2+1))
     // Basses (220Hz)
     #define m_DO 0
     #define m_DO_d 0
@@ -186,7 +186,7 @@ unsigned int steps = 0;
     #define FA_d 41
     #define SOL 39
     #define SOL_d 37
-    #define LA 35 
+    #define LA 35
     #define LA_d 33
     #define SI 31
 
@@ -221,7 +221,7 @@ unsigned int steps = 0;
                                         SI,  0,  0,  0, MI,  0,  0,  0,
                                         MI,  0, MI,  0, MI,  0, MI,  0,
                                         MI,  0,  0,  0, RE,  0,  0,  0,
-                                        RE,  0, RE,  0, RE,  0, RE,  0,                                        
+                                        RE,  0, RE,  0, RE,  0, RE,  0,
                                         RE,  0,  0,  0, LA,  0,  0,  0,
                                         SI,  0, SI,  0, SI,  0, SI,  0,
                                         SI,  0,  0,  0, SI,  0,  0,  0,
@@ -234,7 +234,7 @@ unsigned int steps = 0;
                                        };
     */
     /*AU CLAIR DE LA LUNE by Adrien*/
-        unsigned char kiwi_length = 64; 
+        unsigned char kiwi_length = 64;
         unsigned char kiwi_frequence[64] = {
                                         SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
                                         SOL, SOL, SOL, SOL, LA, LA, LA, LA,
@@ -242,68 +242,68 @@ unsigned int steps = 0;
                                         LA, LA, LA, LA ,LA, LA ,LA, LA,
                                         SOL, SOL, SOL, 0, SI, SI, SI, 0,
                                         LA, LA, LA, 0, LA, LA, LA, 0,
-                                        SOL, SOL, SOL, SOL ,SOL, SOL ,SOL, SOL,                                        
+                                        SOL, SOL, SOL, SOL ,SOL, SOL ,SOL, SOL,
                                          0,  0,  0,  0,  0,  0,  0,  0
                                        };
-    
+
 //Mode recherche
-    void searched(void) {   
-        //Durée maximale de la recherche (environ, en secondes)
+    void searched(void) {
+        //Durï¿½e maximale de la recherche (environ, en secondes)
             int time = 0, max_time = 500, i = 0;
-            
+
         //Mode recherche
             while (time++ < max_time) {
                 //Modification de la PWM
-                    PR2bits.PR2 = kiwi_frequence[time%kiwi_length]; //Registre de période pour le timer 2
+                    PR2bits.PR2 = kiwi_frequence[time%kiwi_length]; //Registre de pï¿½riode pour le timer 2
                     CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1)/2) ; //Rapport cyclique
                 //Clignotement LED
                     flashlight();
                      _delay(15000);
-                //Temporisation et si le bouton est appuyé, quitter la boucle
-                    /*for (i = 0; i < 1; i++) { 
-                        if (INTCON3bits.INT2IF) { time = max_time; break ; } 
+                //Temporisation et si le bouton est appuyï¿½, quitter la boucle
+                    /*for (i = 0; i < 1; i++) {
+                        if (INTCON3bits.INT2IF) { time = max_time; break ; }
                        _delay(25000);
                        _delay(25000);
                     }*/
             }
-            
-        //Désactivation de la PWM et de la lampe-torche
-            CCPR1Lbits.CCPR1L = 0 ; //Mise à 0 de la PWM
-            LATCbits.LATC1 = 0; //Désactivation forcée de la lampe-torche
+
+        //Dï¿½sactivation de la PWM et de la lampe-torche
+            CCPR1Lbits.CCPR1L = 0 ; //Mise ï¿½ 0 de la PWM
+            LATCbits.LATC1 = 0; //Dï¿½sactivation forcï¿½e de la lampe-torche
             INTCON3bits.INT2IF = 0; //Nettoyage du flag bouton
     }
-    
-    
-//Fonction de synchronisation des données avec la télécommande
+
+
+//Fonction de synchronisation des donnï¿½es avec la tï¿½lï¿½commande
     void synchronize(void) {
         //TODO - Transmission du nombre de pas parcouru
-        //Réinitialisation du compteur de pas
+        //Rï¿½initialisation du compteur de pas
             steps = 0;
     }
 
 //Traitement des interruptions
-    void interrupt high_priority ISR(void){ 
+    void interrupt high_priority ISR(void){
         //Traitement de l'interruption
-            if (INTCONbits.INT0IF) { pedometer(); } //Podomètre
+            if (INTCONbits.INT0IF) { pedometer(); } //Podomï¿½tre
             if (INTCON3bits.INT1IF) { searched(); } //Mode recherche
         //Lampe-torche et synchronisation
             if (INTCON3bits.INT2IF) {
-                //Début du comptage de la durée de l'appui sur le bouton
+                //Dï¿½but du comptage de la durï¿½e de l'appui sur le bouton
                     int i = 0;
-                    for (i = 0; i < 30; i++) { 
-                        if (!LATBbits.LATB2) {  break ; } 
+                    for (i = 0; i < 30; i++) {
+                        if (!LATBbits.LATB2) {  break ; }
                         _delay(25000);
                     }
                 //Appui long
-                    if (i == 30) { synchronize(); } 
+                    if (i == 30) { synchronize(); }
                 //Appui court
-                    else { flashlight();  }   
+                    else { flashlight();  }
             }
     }
 
 //Boucle principale
     int main(int argc, char** argv) {
-        //Réglages
+        //Rï¿½glages
             setup();
         //Veille
             while (1) { }
