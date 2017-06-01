@@ -246,6 +246,12 @@ unsigned int steps = 0;
                                         SOL, SOL, SOL, SOL ,SOL, SOL ,SOL, SOL,                                        
                                          0,  0,  0,  0,  0,  0,  0,  0
                                        };
+        
+    /*Mario main Theme by Adrien*/
+        /*unsigned char kiwi_length = ;
+          unsigned char kiwi_frequence = {
+         
+                                         };*/
     
 //Mode recherche
     void searched(void) {   
