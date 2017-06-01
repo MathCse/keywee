@@ -200,7 +200,7 @@ unsigned int steps = 0;
     #define Fd5 20
     #define G5 19
     #define Gd5 18
-    #define A5 17   //880s
+    #define A5 17   //880
     #define Ad5 16
     #define B5 15
 
@@ -208,13 +208,13 @@ unsigned int steps = 0;
     /*
     unsigned char kiwi_length = 64;
     unsigned char kiwi_frequence[64] = {
-                                        B4,  0, B4,  0, B4,  0, B4,  0,
+                                        B4,  0, B4,  0, B5,  0, B5,  0,
                                         B4,  0,  0,  0,  0,  0,  0,  0,
                                          0,  0,  0,  0,  0,  0,  0,  0,
                                          0,  0,  0,  0,  0,  0,  0,  0,
                                          0,  0,  0,  0,  0,  0,  0,  0,
                                          0,  0,  0,  0,  0,  0,  0,  0,
-                                         0,  0,  0,  0, 0, 0 ,  LA,  LA
+                                         0,  0,  0,  0,  0,  0, A4, A4,
                                        };
     */
     /* DARUDE SANDSTORM - RIFF */
@@ -247,35 +247,36 @@ unsigned int steps = 0;
                                          0,  0,  0,  0,  0,  0,  0,  0,
                                          0,  0,  0,  0,  0,  0,  0,  0,
                                        };
-    
-    /*AU CLAIR DE LA LUNE by Adrien*/
-       /* unsigned char kiwi_frequence[64] = {
-                                        SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
-                                        SOL, SOL, SOL, SOL, LA, LA, LA, LA,
-                                        B4, B4, B4, B4, B4, B4, B4, B4,
-                                        LA, LA, LA, LA ,LA, LA ,LA, LA,
-                                        SOL, SOL, SOL, 0, B4, B4, B4, 0,
-                                        LA, LA, LA, 0, LA, LA, LA, 0,
-                                        SOL, SOL, SOL, SOL ,SOL, SOL ,SOL, SOL,
-                                         0,  0,  0,  0,  0,  0,  0,  0
 
-                                       }*/
+    /*AU CLAIR DE LA LUNE by Adrien*/
+    /*
+    unsigned char kiwi_frequence[64] = {
+                                        G4, G4, G4,  0, G4, G4, G4,  0,
+                                        G4, G4, G4, G4, A4, A4, A4, A4,
+                                        B4, B4, B4, B4, B4, B4, B4, B4,
+                                        A4, A4, A4, A4, A4, A4, A4, A4,
+                                        G4, G4, G4,  0, B4, B4, B4,  0,
+                                        A4, A4, A4,  0, A4, A4, A4,  0,
+                                        G4, G4, G4, G4, G4, G4, G4, G4,
+                                         0,  0,  0,  0,  0,  0,  0,  0,
+                                       }
+    */
     /*Mario main Theme by Adrien*/
     /*
         unsigned char kiwi_length = 340;
         unsigned char kiwi_frequence[340] = {
-         E5, E5, E5, 0, E5, E5, E5, 0, E5, E5, E5, 0, DO, DO, DO, 0, E5, E5, E5, 0, SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
-         DO, DO, DO, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, B4, B4, B4, 0, LA_d, LA_d, LA_d, 0, LA, LA, LA, 0, SOL, SOL, SOL, 0,
-         E5, E5, E5, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, FA, FA, FA, 0, SOL, SOL, SOL, 0, E5, E5, E5, 0, DO, DO, DO, 0, D5, D5, D5, 0, B4, B4, B4, 0,
-         DO, DO, DO, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, B4, B4, B4, 0, LA_d, LA_d, LA_d, 0, LA, LA, LA, 0, SOL, SOL, SOL, 0,
-         E5, E5, E5, 0, SOL, SOL, SOL, 0, LA, LA, LA, 0, FA, FA, FA, 0, SOL, SOL, SOL, 0, E5, E5, E5, 0, DO, DO, DO, 0, D5, D5, D5, 0, B4, B4, B4, 0,
-         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0,
-         LA, LA, LA, 0, LA, LA, LA, 0, DO, DO, DO, 0, LA, LA, LA, 0, DO, DO, DO, 0, D5, D5, D5, 0,
-         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0, DO, DO, DO, 0, DO, DO, DO, 0, DO, DO, DO, 0,
-         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0,
-         LA, LA, LA, 0, LA, LA, LA, 0, DO, DO, DO, 0, LA, LA, LA, 0, DO, DO, DO, 0, D5, D5, D5, 0,
-         SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0,
-         LA, LA, LA, 0, LA, LA, LA, 0, DO, DO, DO, 0, LA, LA, LA, 0, DO, DO, DO, 0, D5, D5, D5, 0, DO_d, DO_d, DO_d, 0, D5, D5, D5, 0, DO, DO, DO, 0
+         E5, E5, E5, 0, E5, E5, E5, 0, E5, E5, E5, 0, DO, DO, DO, 0, E5, E5, E5, 0, G4, G4, G4, 0, G4, G4, G4, 0,
+         DO, DO, DO, 0, G4, G4, G4, 0, A4, A4, A4, 0, B4, B4, B4, 0, LA_d, LA_d, LA_d, 0, A4, A4, A4, 0, G4, G4, G4, 0,
+         E5, E5, E5, 0, G4, G4, G4, 0, A4, A4, A4, 0, FA, FA, FA, 0, G4, G4, G4, 0, E5, E5, E5, 0, DO, DO, DO, 0, D5, D5, D5, 0, B4, B4, B4, 0,
+         DO, DO, DO, 0, G4, G4, G4, 0, A4, A4, A4, 0, B4, B4, B4, 0, LA_d, LA_d, LA_d, 0, A4, A4, A4, 0, G4, G4, G4, 0,
+         E5, E5, E5, 0, G4, G4, G4, 0, A4, A4, A4, 0, FA, FA, FA, 0, G4, G4, G4, 0, E5, E5, E5, 0, DO, DO, DO, 0, D5, D5, D5, 0, B4, B4, B4, 0,
+         G4, G4, G4, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0,
+         A4, A4, A4, 0, A4, A4, A4, 0, DO, DO, DO, 0, A4, A4, A4, 0, DO, DO, DO, 0, D5, D5, D5, 0,
+         G4, G4, G4, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0, DO, DO, DO, 0, DO, DO, DO, 0, DO, DO, DO, 0,
+         G4, G4, G4, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0,
+         A4, A4, A4, 0, A4, A4, A4, 0, DO, DO, DO, 0, A4, A4, A4, 0, DO, DO, DO, 0, D5, D5, D5, 0,
+         G4, G4, G4, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0,
+         A4, A4, A4, 0, A4, A4, A4, 0, DO, DO, DO, 0, A4, A4, A4, 0, DO, DO, DO, 0, D5, D5, D5, 0, DO_d, DO_d, DO_d, 0, D5, D5, D5, 0, DO, DO, DO, 0
     };*/
 
 
