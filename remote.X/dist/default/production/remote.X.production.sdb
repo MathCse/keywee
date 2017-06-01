@@ -35,7 +35,7 @@
 [v ___flmul __flmul `(d  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"21 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"21 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\lcd.c
 [v _ReadByte ReadByte `(uc  1 e 1 0 ]
 [v i2_ReadByte ReadByte `(uc  1 e 1 0 ]
 "52
@@ -63,7 +63,7 @@
 "229
 [v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 [v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
-"75 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+"75 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\main.c
 [v _show_debug show_debug `(v  1 e 1 0 ]
 [v i2_show_debug show_debug `(v  1 e 1 0 ]
 "80
@@ -74,13 +74,15 @@
 [v _pedometer pedometer `(v  1 e 1 0 ]
 "156
 [v _flashlight flashlight `(v  1 e 1 0 ]
-"181
+[v i2_flashlight flashlight `(v  1 e 1 0 ]
+"265
 [v _searched searched `(v  1 e 1 0 ]
-"207
+[v i2_searched searched `(v  1 e 1 0 ]
+"293
 [v _synchronize synchronize `(v  1 e 1 0 ]
-"214
+"300
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"234
+"320
 [v _main main `(i  1 e 2 0 ]
 [s S211 . 1 `uc 1 ANSB0 1 0 :1:0 
 `uc 1 ANSB1 1 0 :1:1 
@@ -138,7 +140,7 @@
 [v _LATCbits LATCbits `VES326  1 e 1 @3979 ]
 "7894
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S586 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S587 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -148,7 +150,7 @@
 `uc 1 LATD7 1 0 :1:7 
 ]
 "7921
-[s S595 . 1 `uc 1 LD0 1 0 :1:0 
+[s S596 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -157,8 +159,8 @@
 `uc 1 LD6 1 0 :1:6 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S604 . 1 `S586 1 . 1 0 `S595 1 . 1 0 ]
-[v _LATDbits LATDbits `VES604  1 e 1 @3980 ]
+[u S605 . 1 `S587 1 . 1 0 `S596 1 . 1 0 ]
+[v _LATDbits LATDbits `VES605  1 e 1 @3980 ]
 [s S131 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
@@ -201,7 +203,7 @@
 ]
 [u S286 . 1 `S268 1 . 1 0 `S277 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES286  1 e 1 @3988 ]
-[s S546 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S547 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -211,7 +213,7 @@
 `uc 1 TRISD7 1 0 :1:7 
 ]
 "8756
-[s S555 . 1 `uc 1 RD0 1 0 :1:0 
+[s S556 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
 `uc 1 RD3 1 0 :1:3 
@@ -220,8 +222,8 @@
 `uc 1 RD6 1 0 :1:6 
 `uc 1 RD7 1 0 :1:7 
 ]
-[u S564 . 1 `S546 1 . 1 0 `S555 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES564  1 e 1 @3989 ]
+[u S565 . 1 `S547 1 . 1 0 `S556 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES565  1 e 1 @3989 ]
 [s S348 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
@@ -327,16 +329,16 @@
 ]
 [u S104 . 1 `S82 1 . 1 0 `S91 1 . 1 0 `S100 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES104  1 e 1 @4082 ]
-"72 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+"72 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\main.c
 [v _steps steps `ui  1 e 2 0 ]
-"177
+"248
 [v _kiwi_length kiwi_length `uc  1 e 1 0 ]
-"178
-[v _kiwi_frequence kiwi_frequence `[3]uc  1 e 3 0 ]
-"234
+"250
+[v _kiwi_frequence kiwi_frequence `[340]uc  1 e 340 0 ]
+"320
 [v _main main `(i  1 e 2 0 ]
 {
-"241
+"328
 } 0
 "89
 [v _setup setup `(v  1 e 1 0 ]
@@ -353,51 +355,27 @@
 {
 "77
 } 0
-"229 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"229 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\lcd.c
 [v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 {
 [v LCDWriteInt@column column `uc  1 a 1 wreg ]
 "230
-[v LCDWriteInt@string string `[3]uc  1 a 3 1 ]
+[v LCDWriteInt@string string `[3]uc  1 a 3 3 ]
 "229
 [v LCDWriteInt@column column `uc  1 a 1 wreg ]
-[v LCDWriteInt@row row `uc  1 p 1 48 ]
-[v LCDWriteInt@value value `uc  1 p 1 49 ]
+[v LCDWriteInt@row row `uc  1 p 1 0 ]
+[v LCDWriteInt@value value `uc  1 p 1 1 ]
 "232
-[v LCDWriteInt@column column `uc  1 a 1 0 ]
+[v LCDWriteInt@column column `uc  1 a 1 2 ]
 "238
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-{
-"11
-[v ___awmod@sign sign `uc  1 a 1 42 ]
-[v ___awmod@counter counter `uc  1 a 1 41 ]
-"8
-[v ___awmod@dividend dividend `i  1 p 2 37 ]
-[v ___awmod@divisor divisor `i  1 p 2 39 ]
-"35
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
-{
-"11
-[v ___awdiv@quotient quotient `i  1 a 2 43 ]
-"12
-[v ___awdiv@sign sign `uc  1 a 1 42 ]
-[v ___awdiv@counter counter `uc  1 a 1 41 ]
-"8
-[v ___awdiv@dividend dividend `i  1 p 2 37 ]
-[v ___awdiv@divisor divisor `i  1 p 2 39 ]
-"42
-} 0
-"193 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"193
 [v _LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
 {
 "195
-[v LCDWriteStr@i i `uc  1 a 1 47 ]
+[v LCDWriteStr@i i `uc  1 a 1 50 ]
 "193
-[v LCDWriteStr@string string `*.35Cuc  1 p 2 43 ]
+[v LCDWriteStr@string string `*.35Cuc  1 p 2 46 ]
 "199
 } 0
 "180
@@ -406,7 +384,7 @@
 [v LCDPutChar@data data `uc  1 a 1 wreg ]
 [v LCDPutChar@data data `uc  1 a 1 wreg ]
 "182
-[v LCDPutChar@data data `uc  1 a 1 42 ]
+[v LCDPutChar@data data `uc  1 a 1 45 ]
 "184
 } 0
 "171
@@ -414,9 +392,9 @@
 {
 [v LCDGoto@column column `uc  1 a 1 wreg ]
 [v LCDGoto@column column `uc  1 a 1 wreg ]
-[v LCDGoto@row row `uc  1 p 1 42 ]
+[v LCDGoto@row row `uc  1 p 1 45 ]
 "173
-[v LCDGoto@column column `uc  1 a 1 47 ]
+[v LCDGoto@column column `uc  1 a 1 50 ]
 "178
 } 0
 "89
@@ -434,9 +412,9 @@
 {
 [v WriteByte@cmd cmd `uc  1 a 1 wreg ]
 [v WriteByte@cmd cmd `uc  1 a 1 wreg ]
-[v WriteByte@data data `uc  1 p 1 40 ]
+[v WriteByte@data data `uc  1 p 1 43 ]
 "85
-[v WriteByte@cmd cmd `uc  1 a 1 41 ]
+[v WriteByte@cmd cmd `uc  1 a 1 44 ]
 "87
 } 0
 "66
@@ -444,49 +422,87 @@
 {
 [v WriteNibble@cmd cmd `uc  1 a 1 wreg ]
 [v WriteNibble@cmd cmd `uc  1 a 1 wreg ]
-[v WriteNibble@data data `uc  1 p 1 37 ]
+[v WriteNibble@data data `uc  1 p 1 40 ]
 "68
-[v WriteNibble@cmd cmd `uc  1 a 1 39 ]
+[v WriteNibble@cmd cmd `uc  1 a 1 42 ]
 "81
 } 0
 "52
 [v _WaitLCD WaitLCD `(v  1 e 1 0 ]
 {
 "54
-[v WaitLCD@status status `uc  1 a 1 38 ]
+[v WaitLCD@status status `uc  1 a 1 41 ]
 "64
 } 0
 "21
 [v _ReadByte ReadByte `(uc  1 e 1 0 ]
 {
 "23
-[v ReadByte@status status `uc  1 a 1 37 ]
+[v ReadByte@status status `uc  1 a 1 40 ]
 "50
 } 0
-"214 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
-[v _ISR ISR `IIH(v  1 e 1 0 ]
-{
-"221
-[v ISR@i i `i  1 a 2 35 ]
-"231
-} 0
-"207
-[v _synchronize synchronize `(v  1 e 1 0 ]
-{
-"211
-} 0
-"181
+"265 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\main.c
 [v _searched searched `(v  1 e 1 0 ]
 {
-"183
-[v searched@i i `i  1 a 2 18 ]
-[v searched@time time `i  1 a 2 16 ]
-"204
+"267
+[v searched@time time `i  1 a 2 7 ]
+[v searched@max_time max_time `i  1 a 2 5 ]
+[v searched@i i `i  1 a 2 3 ]
+"289
 } 0
 "156
 [v _flashlight flashlight `(v  1 e 1 0 ]
 {
 "161
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 45 ]
+[v ___awmod@counter counter `uc  1 a 1 44 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 40 ]
+[v ___awmod@divisor divisor `i  1 p 2 42 ]
+"35
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 52 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 51 ]
+[v ___awdiv@counter counter `uc  1 a 1 50 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 46 ]
+[v ___awdiv@divisor divisor `i  1 p 2 48 ]
+"42
+} 0
+"300 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\main.c
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"307
+[v ISR@i i `i  1 a 2 38 ]
+"317
+} 0
+"265
+[v i2_searched searched `(v  1 e 1 0 ]
+{
+[v i2searched@time searched `i  1 a 2 21 ]
+[v i2searched@max_time searched `i  1 a 2 19 ]
+[v i2searched@i searched `i  1 a 2 17 ]
+"289
+} 0
+"156
+[v i2_flashlight flashlight `(v  1 e 1 0 ]
+{
+"161
+} 0
+"293
+[v _synchronize synchronize `(v  1 e 1 0 ]
+{
+"297
 } 0
 "145
 [v _pedometer pedometer `(v  1 e 1 0 ]
@@ -498,7 +514,7 @@
 {
 "77
 } 0
-"229 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"229 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\lcd.c
 [v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 {
 [v i2LCDWriteInt@column column `uc  1 a 1 wreg ]
@@ -529,7 +545,7 @@
 [v i2___awdiv@divisor divisor `i  1 p 2 8 ]
 "42
 } 0
-"193 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"193 C:\Users\AdrienVANDEMEERSCHE\Documents\GitHub\keywee\remote.X\lcd.c
 [v i2_LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
 {
 [v i2LCDWriteStr@i LCDWriteStr `uc  1 a 1 10 ]
