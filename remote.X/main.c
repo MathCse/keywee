@@ -238,7 +238,7 @@ unsigned int steps = 0;
                                        };
 
     /*AU CLAIR DE LA LUNE by Adrien*/
-        /*unsigned char kiwi_frequence[64] = {
+       /* unsigned char kiwi_frequence[64] = {
                                         SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
                                         SOL, SOL, SOL, SOL, LA, LA, LA, LA,
                                         B4, B4, B4, B4, B4, B4, B4, B4,
@@ -247,6 +247,7 @@ unsigned int steps = 0;
                                         LA, LA, LA, 0, LA, LA, LA, 0,
                                         SOL, SOL, SOL, SOL ,SOL, SOL ,SOL, SOL,
                                          0,  0,  0,  0,  0,  0,  0,  0
+
                                        }*/
     /*Mario main Theme by Adrien*/
     /*
@@ -265,6 +266,7 @@ unsigned int steps = 0;
          SOL, SOL, SOL, 0, FA_d, FA_d, FA_d, 0, FA, FA, FA, 0, RE_d, RE_d, RE_d, 0, E5, E5, E5, 0,
          LA, LA, LA, 0, LA, LA, LA, 0, DO, DO, DO, 0, LA, LA, LA, 0, DO, DO, DO, 0, D5, D5, D5, 0, DO_d, DO_d, DO_d, 0, D5, D5, D5, 0, DO, DO, DO, 0
     };*/
+
 
 //Mode recherche
     void searched(void) {

@@ -7071,222 +7071,550 @@ Version 3.2 HI-TECH Software Intermediate Code
 "161
 [e :UE 858 ]
 }
-"177
+"248
 [v _kiwi_length `uc ~T0 @X0 1 e ]
 [i _kiwi_length
--> -> 3 `i `uc
+-> -> 340 `i `uc
 ]
-[; ;main.c: 177: unsigned char kiwi_length = 3;
-"178
-[v _kiwi_frequence `uc ~T0 @X0 -> 3 `i e ]
+[; ;main.c: 248: unsigned char kiwi_length = 340;
+"250
+[v _kiwi_frequence `uc ~T0 @X0 -> 340 `i e ]
 [i _kiwi_frequence
 :U ..
+"251
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+"252
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
 -> -> 35 `i `uc
 -> -> 35 `i `uc
 -> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+-> -> 33 `i `uc
+-> -> 33 `i `uc
+-> -> 33 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+"253
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+"254
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+-> -> 33 `i `uc
+-> -> 33 `i `uc
+-> -> 33 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+"255
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 31 `i `uc
+-> -> 0 `i `uc
+"256
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 0 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+"257
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 0 `i `uc
+"258
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 0 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+"259
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 0 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+"260
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 0 `i `uc
+"261
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 39 `i `uc
+-> -> 0 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 41 `i `uc
+-> -> 0 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 44 `i `uc
+-> -> 0 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 49 `i `uc
+-> -> 0 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 46 `i `uc
+-> -> 0 `i `uc
+"262
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 35 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 0 `i `uc
+-> -> 55 `i `uc
+-> -> 55 `i `uc
+-> -> 55 `i `uc
+-> -> 0 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 52 `i `uc
+-> -> 0 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+-> -> 59 `i `uc
+"263
+-> -> 0 `i `uc
 ..
 ]
-[; ;main.c: 178: unsigned char kiwi_frequence[3] = {35, 35, 35};
-"181
+[; ;main.c: 250: unsigned char kiwi_frequence[340] = {
+[; ;main.c: 251: 46, 46, 46, 0, 46, 46, 46, 0, 46, 46, 46, 0, 59, 59, 59, 0, 46, 46, 46, 0, 39, 39, 39, 0, 39, 39, 39, 0,
+[; ;main.c: 252: 59, 59, 59, 0, 39, 39, 39, 0, 35, 35, 35, 0, 31, 31, 31, 0, 33, 33, 33, 0, 35, 35, 35, 0, 39, 39, 39, 0,
+[; ;main.c: 253: 46, 46, 46, 0, 39, 39, 39, 0, 35, 35, 35, 0, 44, 44, 44, 0, 39, 39, 39, 0, 46, 46, 46, 0, 59, 59, 59, 0, 52, 52, 52, 0, 31, 31, 31, 0,
+[; ;main.c: 254: 59, 59, 59, 0, 39, 39, 39, 0, 35, 35, 35, 0, 31, 31, 31, 0, 33, 33, 33, 0, 35, 35, 35, 0, 39, 39, 39, 0,
+[; ;main.c: 255: 46, 46, 46, 0, 39, 39, 39, 0, 35, 35, 35, 0, 44, 44, 44, 0, 39, 39, 39, 0, 46, 46, 46, 0, 59, 59, 59, 0, 52, 52, 52, 0, 31, 31, 31, 0,
+[; ;main.c: 256: 39, 39, 39, 0, 41, 41, 41, 0, 44, 44, 44, 0, 49, 49, 49, 0, 46, 46, 46, 0,
+[; ;main.c: 257: 35, 35, 35, 0, 35, 35, 35, 0, 59, 59, 59, 0, 35, 35, 35, 0, 59, 59, 59, 0, 52, 52, 52, 0,
+[; ;main.c: 258: 39, 39, 39, 0, 41, 41, 41, 0, 44, 44, 44, 0, 49, 49, 49, 0, 46, 46, 46, 0, 59, 59, 59, 0, 59, 59, 59, 0, 59, 59, 59, 0,
+[; ;main.c: 259: 39, 39, 39, 0, 41, 41, 41, 0, 44, 44, 44, 0, 49, 49, 49, 0, 46, 46, 46, 0,
+[; ;main.c: 260: 35, 35, 35, 0, 35, 35, 35, 0, 59, 59, 59, 0, 35, 35, 35, 0, 59, 59, 59, 0, 52, 52, 52, 0,
+[; ;main.c: 261: 39, 39, 39, 0, 41, 41, 41, 0, 44, 44, 44, 0, 49, 49, 49, 0, 46, 46, 46, 0,
+[; ;main.c: 262: 35, 35, 35, 0, 35, 35, 35, 0, 59, 59, 59, 0, 35, 35, 35, 0, 59, 59, 59, 0, 52, 52, 52, 0, 55, 55, 55, 0, 52, 52, 52, 0, 59, 59, 59, 0
+[; ;main.c: 263: };
+"265
 [v _searched `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 181: void searched(void) {
+[; ;main.c: 265: void searched(void) {
 [e :U _searched ]
 [f ]
-"183
+"267
 [v _time `i ~T0 @X0 1 a ]
-[; ;main.c: 183: int time = 50, i = 0;
-[e = _time -> 50 `i ]
+[; ;main.c: 267: int time = 0, max_time = 500, i = 0;
+[e = _time -> 0 `i ]
+[v _max_time `i ~T0 @X0 1 a ]
+[e = _max_time -> 500 `i ]
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[; ;main.c: 186: while (time-- > 0) {
-"186
+[; ;main.c: 270: while (time++ < max_time) {
+"270
 [e $U 860  ]
 [e :U 861 ]
 {
-[; ;main.c: 188: PR2bits.PR2 = kiwi_frequence[time%kiwi_length];
-"188
+[; ;main.c: 272: PR2bits.PR2 = kiwi_frequence[time%kiwi_length];
+"272
 [e = . . _PR2bits 0 0 *U + &U _kiwi_frequence * -> -> % _time -> _kiwi_length `i `ui `ux -> -> # *U &U _kiwi_frequence `ui `ux ]
-[; ;main.c: 189: CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1)/2) ;
-"189
+[; ;main.c: 273: CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1)/2) ;
+"273
 [e = . . _CCPR1Lbits 0 0 -> / + -> *U + &U _kiwi_frequence * -> -> % _time -> _kiwi_length `i `ui `ux -> -> # *U &U _kiwi_frequence `ui `ux `i -> 1 `i -> 2 `i `uc ]
-[; ;main.c: 191: flashlight();
-"191
+[; ;main.c: 275: flashlight();
+"275
 [e ( _flashlight ..  ]
-[; ;main.c: 193: for (i = 0; i < 10; i++) {
-"193
-{
-[e = _i -> 0 `i ]
-[e $ < _i -> 10 `i 863  ]
-[e $U 864  ]
-[e :U 863 ]
-{
-[; ;main.c: 194: if (INTCON3bits.INT2IF) { time = 0; break ; }
-"194
-[e $ ! != -> . . _INTCON3bits 0 1 `i -> -> -> 0 `i `Vuc `i 866  ]
-{
-[e = _time -> 0 `i ]
-[e $U 864  ]
-}
-[e :U 866 ]
-[; ;main.c: 195: _delay(25000);
-"195
-[e ( __delay (1 -> -> -> 25000 `i `l `ul ]
-[; ;main.c: 196: if (i > 5) { CCPR1Lbits.CCPR1L = 0; }
-"196
-[e $ ! > _i -> 5 `i 867  ]
-{
-[e = . . _CCPR1Lbits 0 0 -> -> 0 `i `uc ]
-}
-[e :U 867 ]
-"197
-}
-"193
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 10 `i 863  ]
-[e :U 864 ]
-"197
-}
-"198
+[; ;main.c: 276: _delay(15000);
+"276
+[e ( __delay (1 -> -> -> 15000 `i `l `ul ]
+"283
 }
 [e :U 860 ]
-"186
-[e $ > -- _time -> 1 `i -> 0 `i 861  ]
+"270
+[e $ < ++ _time -> 1 `i _max_time 861  ]
 [e :U 862 ]
-[; ;main.c: 197: }
-[; ;main.c: 198: }
-[; ;main.c: 201: CCPR1Lbits.CCPR1L = 0 ;
-"201
+[; ;main.c: 283: }
+[; ;main.c: 286: CCPR1Lbits.CCPR1L = 0 ;
+"286
 [e = . . _CCPR1Lbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 202: LATCbits.LATC1 = 0;
-"202
+[; ;main.c: 287: LATCbits.LATC1 = 0;
+"287
 [e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 203: INTCON3bits.INT2IF = 0;
-"203
+[; ;main.c: 288: INTCON3bits.INT2IF = 0;
+"288
 [e = . . _INTCON3bits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 204: }
-"204
+[; ;main.c: 289: }
+"289
 [e :UE 859 ]
 }
-"207
+"293
 [v _synchronize `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 207: void synchronize(void) {
+[; ;main.c: 293: void synchronize(void) {
 [e :U _synchronize ]
 [f ]
-[; ;main.c: 210: steps = 0;
-"210
+[; ;main.c: 296: steps = 0;
+"296
 [e = _steps -> -> 0 `i `ui ]
-[; ;main.c: 211: }
-"211
-[e :UE 868 ]
+[; ;main.c: 297: }
+"297
+[e :UE 863 ]
 }
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-[v F7191 `(v ~T0 @X0 1 tf ]
-"214
-[v _ISR `IHF7191 ~T0 @X0 1 e ]
+[v F7192 `(v ~T0 @X0 1 tf ]
+"300
+[v _ISR `IHF7192 ~T0 @X0 1 e ]
 {
-[; ;main.c: 214: void interrupt high_priority ISR(void){
+[; ;main.c: 300: void interrupt high_priority ISR(void){
 [e :U _ISR ]
 [f ]
-[; ;main.c: 216: if (INTCONbits.INT0IF) { pedometer(); }
-"216
-[e $ ! != -> . . _INTCONbits 0 1 `i -> -> -> 0 `i `Vuc `i 870  ]
+[; ;main.c: 302: if (INTCONbits.INT0IF) { pedometer(); }
+"302
+[e $ ! != -> . . _INTCONbits 0 1 `i -> -> -> 0 `i `Vuc `i 865  ]
 {
 [e ( _pedometer ..  ]
 }
-[e :U 870 ]
-[; ;main.c: 217: if (INTCON3bits.INT1IF) { searched(); }
-"217
-[e $ ! != -> . . _INTCON3bits 0 0 `i -> -> -> 0 `i `Vuc `i 871  ]
+[e :U 865 ]
+[; ;main.c: 303: if (INTCON3bits.INT1IF) { searched(); }
+"303
+[e $ ! != -> . . _INTCON3bits 0 0 `i -> -> -> 0 `i `Vuc `i 866  ]
 {
 [e ( _searched ..  ]
 }
-[e :U 871 ]
-[; ;main.c: 219: if (INTCON3bits.INT2IF) {
-"219
-[e $ ! != -> . . _INTCON3bits 0 1 `i -> -> -> 0 `i `Vuc `i 872  ]
+[e :U 866 ]
+[; ;main.c: 305: if (INTCON3bits.INT2IF) {
+"305
+[e $ ! != -> . . _INTCON3bits 0 1 `i -> -> -> 0 `i `Vuc `i 867  ]
 {
-"221
+"307
 [v _i `i ~T0 @X0 1 a ]
-[; ;main.c: 221: int i = 0;
+[; ;main.c: 307: int i = 0;
 [e = _i -> 0 `i ]
-[; ;main.c: 222: for (i = 0; i < 30; i++) {
-"222
+[; ;main.c: 308: for (i = 0; i < 30; i++) {
+"308
 {
 [e = _i -> 0 `i ]
-[e $ < _i -> 30 `i 873  ]
-[e $U 874  ]
-[e :U 873 ]
+[e $ < _i -> 30 `i 868  ]
+[e $U 869  ]
+[e :U 868 ]
 {
-[; ;main.c: 223: if (!LATBbits.LATB2) { break ; }
-"223
-[e $ ! ! != -> . . _LATBbits 0 2 `i -> -> -> 0 `i `Vuc `i 876  ]
+[; ;main.c: 309: if (!LATBbits.LATB2) { break ; }
+"309
+[e $ ! ! != -> . . _LATBbits 0 2 `i -> -> -> 0 `i `Vuc `i 871  ]
 {
-[e $U 874  ]
+[e $U 869  ]
 }
-[e :U 876 ]
-[; ;main.c: 224: _delay(25000);
-"224
+[e :U 871 ]
+[; ;main.c: 310: _delay(25000);
+"310
 [e ( __delay (1 -> -> -> 25000 `i `l `ul ]
-"225
+"311
 }
-"222
+"308
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 30 `i 873  ]
-[e :U 874 ]
-"225
+[e $ < _i -> 30 `i 868  ]
+[e :U 869 ]
+"311
 }
-[; ;main.c: 225: }
-[; ;main.c: 227: if (i == 30) { synchronize(); }
-"227
-[e $ ! == _i -> 30 `i 877  ]
+[; ;main.c: 311: }
+[; ;main.c: 313: if (i == 30) { synchronize(); }
+"313
+[e $ ! == _i -> 30 `i 872  ]
 {
 [e ( _synchronize ..  ]
 }
-[e $U 878  ]
-"229
-[e :U 877 ]
-[; ;main.c: 229: else { flashlight(); }
+[e $U 873  ]
+"315
+[e :U 872 ]
+[; ;main.c: 315: else { flashlight(); }
 {
 [e ( _flashlight ..  ]
 }
-[e :U 878 ]
-"230
+[e :U 873 ]
+"316
 }
-[e :U 872 ]
-[; ;main.c: 230: }
-[; ;main.c: 231: }
-"231
-[e :UE 869 ]
+[e :U 867 ]
+[; ;main.c: 316: }
+[; ;main.c: 317: }
+"317
+[e :UE 864 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"234
+"320
 [v _main `(i ~T0 @X0 1 ef2`i`**uc ]
 {
-[; ;main.c: 234: int main(int argc, char** argv) {
+[; ;main.c: 320: int main(int argc, char** argv) {
 [e :U _main ]
 [v _argc `i ~T0 @X0 1 r1 ]
 [v _argv `**uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;main.c: 236: setup();
-"236
+[; ;main.c: 322: setup();
+"322
 [e ( _setup ..  ]
-[; ;main.c: 238: while (1) { }
-"238
-[e :U 881 ]
+[; ;main.c: 324: searched();
+"324
+[e ( _searched ..  ]
+[; ;main.c: 325: while (1) { }
+"325
+[e :U 876 ]
 {
 }
-[e :U 880 ]
-[e $U 881  ]
-[e :U 882 ]
-[; ;main.c: 240: return (0);
-"240
+[e :U 875 ]
+[e $U 876  ]
+[e :U 877 ]
+[; ;main.c: 327: return (0);
+"327
 [e ) -> 0 `i ]
-[e $UE 879  ]
-[; ;main.c: 241: }
-"241
-[e :UE 879 ]
+[e $UE 874  ]
+[; ;main.c: 328: }
+"328
+[e :UE 874 ]
 }
 [a 1C 78 111 109 98 114 101 32 112 97 115 0 ]
 
