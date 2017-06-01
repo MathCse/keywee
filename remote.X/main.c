@@ -8,7 +8,7 @@
 #include "general.h"
 #include "lcd.h"
 
-/*****/
+/******/
 // CONFIG1H
 #pragma config FOSC = INTIO7    // Oscillator Selection bits (Internal oscillator block, CLKOUT function on OSC2)
 #pragma config PLLCFG = OFF     // 4X PLL Enable (Oscillator used directly)
