@@ -7,7 +7,7 @@
 #include "general.h"
 #include "lcd.h"
 
-/*****/
+/******/
 // CONFIG1H
 #pragma config FOSC = INTIO7    // Oscillator Selection bits (Internal oscillator block, CLKOUT function on OSC2)
 #pragma config PLLCFG = OFF     // 4X PLL Enable (Oscillator used directly)
@@ -162,21 +162,6 @@ unsigned int steps = 0;
     
 //Cri du kiwi ou darude sandstorm
 //Fréquence_PWM = (1MHz)/(4 * prescaler * (PR2+1)) 
-    // Basses (220Hz)
-    #define m_DO 0
-    #define m_DO_d 0
-    #define m_RE 0
-    #define m_RE_d 0
-    #define m_MI 0
-    #define m_FA 0
-    #define m_FA_d 0
-    #define m_SOL 0
-    #define m_SOL_d 0
-    #define m_LA 70
-    #define m_LA_d 0
-    #define m_SI 0
-
-    // Medium (440)
     #define DO 59
     #define DO_d 55
     #define RE 52
@@ -189,19 +174,6 @@ unsigned int steps = 0;
     #define LA 35 
     #define LA_d 33
     #define SI 31
-
-    // Tremble (880)
-    #define M_DO 0
-    #define M_DO_d 0
-    #define M_RE 0
-    #define M_RE_d 0
-    #define M_MI 0
-    #define M_FA 0
-    #define M_FA_d 0
-    #define M_SOL 0
-    #define M_SOL_d 0
-    #define M_LA 18
-
     unsigned char kiwi_length = 3;
     unsigned char kiwi_frequence[3] = {LA, LA, LA};
     
