@@ -161,7 +161,7 @@ unsigned int steps = 0;
     }
     
 //Cri du kiwi ou darude sandstorm
-//Fréquence_PWM = (1MHz)/(4 * prescaler * (PR2+1)) 
+//Fréquence_PWM = (1MHz)/(4 * prescaler * (PR2+1))
     #define DO 59
     #define DO_d 55
     #define RE 52
@@ -174,6 +174,7 @@ unsigned int steps = 0;
     #define LA 35 
     #define LA_d 33
     #define SI 31
+
     unsigned char kiwi_length = 3;
     unsigned char kiwi_frequence[3] = {LA, LA, LA};
     
