@@ -205,7 +205,8 @@ unsigned int steps = 0;
     #define B5 15
 
     /* DARUDE SANDSTORM - INTRO */
-    /*unsigned char kiwi_length = 64;
+    /*
+    unsigned char kiwi_length = 64;
     unsigned char kiwi_frequence[64] = {
                                         B4,  0, B4,  0, B4,  0, B4,  0,
                                         B4,  0,  0,  0,  0,  0,  0,  0,
@@ -217,6 +218,7 @@ unsigned int steps = 0;
                                        };
     */
     /* DARUDE SANDSTORM - RIFF */
+    /*
     unsigned char kiwi_length = 128;
     unsigned char kiwi_frequence[128] = {
                                         B4,  0, B4,  0, B4,  0, B4,  0,
@@ -236,7 +238,16 @@ unsigned int steps = 0;
                                         B4,  0, B4,  0, B4,  0, B4,  0,
                                         B4,  0,  0,  0, E5,  0,  0,  0,
                                        };
+    */
+    /* Kiwi's Scream */
 
+    unsigned char kiwi_length = 24;
+    unsigned char kiwi_frequence[24] = {
+                                        B4, B4, C5,Cd5, E5, F5,Fd5, G5,
+                                         0,  0,  0,  0,  0,  0,  0,  0,
+                                         0,  0,  0,  0,  0,  0,  0,  0,
+                                       };
+    
     /*AU CLAIR DE LA LUNE by Adrien*/
        /* unsigned char kiwi_frequence[64] = {
                                         SOL, SOL, SOL, 0, SOL, SOL, SOL, 0,
