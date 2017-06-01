@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/valen/OneDrive/Documents/GitHub/keywee/remote.X/main.c</file>
-            <file>file:/C:/Users/valen/OneDrive/Documents/GitHub/keywee/remote.X/lcd.c</file>
-=======
-            <file>file:/C:/Users/AdrienVANDEMEERSCHE/Documents/GitHub/keywee/remote.X/main.c</file>
->>>>>>> add2bc1ce26209752c0fb84b3693677bfed31094
+            <file>file:/C:/Users/Lecoq/MPLABXProjects/remote.X/main.c</file>
+            <file>file:/C:/Users/Lecoq/MPLABXProjects/remote.X/lcd.h</file>
+            <file>file:/C:/Users/Lecoq/MPLABXProjects/remote.X/lcd.c</file>
+            <file>file:/C:/Users/Lecoq/MPLABXProjects/remote.X/general.h</file>
         </group>
     </open-files>
 </project-private>
