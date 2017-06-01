@@ -153,11 +153,12 @@ unsigned int steps = 0;
     }
 
 //Active ou désactive la lampe-torche
+    
     void flashlight(void) {
         //Toggle de l'état de la lampe-torche
             LATCbits.LATC1 = (unsigned char) !LATCbits.LATC1; //Inversion de la sortie
         //Nettoyage du flag
-            INTCON3bits.INT1IF = 0; //Flag à 0
+            INTCON3bits.INT2IF = 0; //Flag à 0
     }
     
 //Cri du kiwi ou darude sandstorm
@@ -192,6 +193,7 @@ unsigned int steps = 0;
                 //Temporisation et si le bouton est appuyé, quitter la boucle
                     for (i = 0; i < 10; i++) { 
                         if (INTCON3bits.INT2IF) { time = 0; break ; } 
+                        
                         _delay(25000);
                         if (i > 5) { CCPR1Lbits.CCPR1L = 0; }
                     }

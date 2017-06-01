@@ -2,3 +2,5 @@ remote.X/nbproject/**
 remote.X/dist/**
 remote.X/build/**
 remote.X/debug/**
+remote.X/build/default/production/lcd.p1
+*.p1
