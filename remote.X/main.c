@@ -1,6 +1,3 @@
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <xc.h>
@@ -70,10 +67,15 @@
 
 
 unsigned int steps = 0;
+unsigned char synchronization = 0;
 
 //TEST - TEST - TEST
     void show_debug(void) { 
             LCDWriteInt(0, 1, steps); 
+            if (synchronization) {
+                LCDGoto(8, 1); 
+                LCDWriteStr("Sync");
+            }
     }
 
 //TEST - TEST - TEST
@@ -91,7 +93,7 @@ unsigned int steps = 0;
             init_debug(); 
 
         //Podomètre (interruption prioritaire)
-            INTCON2bits.INTEDG0 = 1; // Front montant
+            INTCON2bits.INTEDG0 = 0; // Front montant
             INTCONbits.INT0IF = 0 ; //Nettoyage de flag
             TRISBbits.TRISB0 = 0; //Patte en sortie
             LATBbits.LATB0 = 0; //Nettoyage de la valeur
@@ -100,7 +102,7 @@ unsigned int steps = 0;
             INTCONbits.INT0E = 1 ; //Activation de l'interruption
 
         //Mode recherche
-            INTCON2bits.INTEDG1 = 1; // Front montant
+            INTCON2bits.INTEDG1 = 0; // Front montant
             INTCON3bits.INT1IF = 0 ; //Nettoyage de flag
             TRISBbits.TRISB1 = 0; //Patte en sortie
             LATBbits.LATB1 = 0; //Nettoyage de la valeur
@@ -181,10 +183,10 @@ unsigned int steps = 0;
 //Mode recherche
     void searched(void) {   
         //Durée maximale de la recherche (environ, en secondes)
-            int time = 50, i = 0;
+            int time = 50, i = 0, found = 0;
             
         //Mode recherche
-            while (time-- > 0) {
+            while ((time-- > 0)&&(!found)) {
                 //Modification de la PWM
                     PR2bits.PR2 = kiwi_frequence[time%kiwi_length]; //Registre de période pour le timer 2
                     CCPR1Lbits.CCPR1L = (unsigned char) ((kiwi_frequence[time%kiwi_length] + 1)/2) ; //Rapport cyclique
@@ -192,8 +194,7 @@ unsigned int steps = 0;
                     flashlight();
                 //Temporisation et si le bouton est appuyé, quitter la boucle
                     for (i = 0; i < 10; i++) { 
-                        if (INTCON3bits.INT2IF) { time = 0; break ; } 
-                        
+                        if (INTCON3bits.INT2IF || LATBbits.LATB2) { found = 1; break ; } 
                         _delay(25000);
                         if (i > 5) { CCPR1Lbits.CCPR1L = 0; }
                     }
@@ -202,14 +203,27 @@ unsigned int steps = 0;
         //Désactivation de la PWM et de la lampe-torche
             CCPR1Lbits.CCPR1L = 0 ; //Mise à 0 de la PWM
             LATCbits.LATC1 = 0; //Désactivation forcée de la lampe-torche
+            INTCON3bits.INT1IF = 0; //Nettoyage du flag bouton
             INTCON3bits.INT2IF = 0; //Nettoyage du flag bouton
     }
     
 //Fonction de synchronisation des données avec la télécommande
     void synchronize(void) {
         //TODO - Transmission du nombre de pas parcouru
+            synchronization = 1;
+        //TEST - TEST - TEST
+            show_debug();
+        //TEST - TEST - TEST
+            _delay(625000);
         //Réinitialisation du compteur de pas
             steps = 0;
+        //Fin de synchronisation
+            synchronization = 0;
+            INTCON3bits.INT2IF = 0; //Nettoyage du flag bouton
+        //TEST - TEST - TEST
+            show_debug();
+            LCDGoto(8, 1);
+            LCDWriteStr("    ");
     }
 
 //Traitement des interruptions
@@ -221,10 +235,15 @@ unsigned int steps = 0;
             if (INTCON3bits.INT2IF) {
                 //Début du comptage de la durée de l'appui sur le bouton
                     int i = 0;
-                    for (i = 0; i < 30; i++) { 
-                        if (!LATBbits.LATB2) {  break ; } 
+                    _delay(75000);
+                    for (i = 3; i < 30; i++) { 
+                        LCDWriteInt(8, 1, i);
+                        if (!PORTBbits.RB2) {  break ; } 
                         _delay(25000);
                     }
+                //TEST - TEST - TEST
+                    LCDGoto(8, 1);
+                    LCDWriteStr("    ");
                 //Appui long
                     if (i == 30) { synchronize(); } 
                 //Appui court
