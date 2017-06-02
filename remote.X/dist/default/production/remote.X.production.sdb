@@ -63,24 +63,24 @@
 "229
 [v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 [v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
-"75 D:\Documents\GitHub\keywee\remote.X\main.c
+"73 D:\Documents\GitHub\keywee\remote.X\main.c
 [v _show_debug show_debug `(v  1 e 1 0 ]
 [v i2_show_debug show_debug `(v  1 e 1 0 ]
-"80
+"82
 [v _init_debug init_debug `(v  1 e 1 0 ]
-"89
+"91
 [v _setup setup `(v  1 e 1 0 ]
-"145
+"147
 [v _pedometer pedometer `(v  1 e 1 0 ]
-"157
+"159
 [v _flashlight flashlight `(v  1 e 1 0 ]
-"182
+"184
 [v _searched searched `(v  1 e 1 0 ]
-"209
+"211
 [v _synchronize synchronize `(v  1 e 1 0 ]
-"216
+"230
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"236
+"255
 [v _main main `(i  1 e 2 0 ]
 [s S211 . 1 `uc 1 ANSB0 1 0 :1:0 
 `uc 1 ANSB1 1 0 :1:1 
@@ -92,6 +92,64 @@
 "108 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f46k22.h
 [u S218 . 1 `S211 1 . 1 0 ]
 [v _ANSELBbits ANSELBbits `VES218  1 e 1 @3897 ]
+[s S140 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"6554
+[s S435 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S444 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 AN13 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S453 . 1 `uc 1 FLT0 1 0 :1:0 
+`uc 1 C12IN3M 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 C12IN2M 1 0 :1:3 
+`uc 1 T5G 1 0 :1:4 
+`uc 1 T1G 1 0 :1:5 
+]
+[s S460 . 1 `uc 1 SRI 1 0 :1:0 
+`uc 1 C12IN3N 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 C12IN2N 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CCP3 1 0 :1:5 
+]
+[s S467 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CTED1 1 0 :1:2 
+`uc 1 CTED2 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T3CKI 1 0 :1:5 
+]
+[s S473 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 P2A 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 P3A 1 0 :1:5 
+]
+[s S478 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S481 . 1 `S140 1 . 1 0 `S435 1 . 1 0 `S444 1 . 1 0 `S453 1 . 1 0 `S460 1 . 1 0 `S467 1 . 1 0 `S473 1 . 1 0 `S478 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES481  1 e 1 @3969 ]
 "7059
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
 [s S171 . 1 `uc 1 LATB0 1 0 :1:0 
@@ -138,7 +196,7 @@
 [v _LATCbits LATCbits `VES326  1 e 1 @3979 ]
 "7808
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S578 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S711 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -148,7 +206,7 @@
 `uc 1 LATD7 1 0 :1:7 
 ]
 "7835
-[s S587 . 1 `uc 1 LD0 1 0 :1:0 
+[s S720 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -157,8 +215,8 @@
 `uc 1 LD6 1 0 :1:6 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S596 . 1 `S578 1 . 1 0 `S587 1 . 1 0 ]
-[v _LATDbits LATDbits `VES596  1 e 1 @3980 ]
+[u S729 . 1 `S711 1 . 1 0 `S720 1 . 1 0 ]
+[v _LATDbits LATDbits `VES729  1 e 1 @3980 ]
 [s S131 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
@@ -169,15 +227,6 @@
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "8223
-[s S140 . 1 `uc 1 RB0 1 0 :1:0 
-`uc 1 RB1 1 0 :1:1 
-`uc 1 RB2 1 0 :1:2 
-`uc 1 RB3 1 0 :1:3 
-`uc 1 RB4 1 0 :1:4 
-`uc 1 RB5 1 0 :1:5 
-`uc 1 RB6 1 0 :1:6 
-`uc 1 RB7 1 0 :1:7 
-]
 [u S149 . 1 `S131 1 . 1 0 `S140 1 . 1 0 ]
 [v _TRISBbits TRISBbits `VES149  1 e 1 @3987 ]
 [s S268 . 1 `uc 1 TRISC0 1 0 :1:0 
@@ -201,7 +250,7 @@
 ]
 [u S286 . 1 `S268 1 . 1 0 `S277 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES286  1 e 1 @3988 ]
-[s S538 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S671 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -211,7 +260,7 @@
 `uc 1 TRISD7 1 0 :1:7 
 ]
 "8665
-[s S547 . 1 `uc 1 RD0 1 0 :1:0 
+[s S680 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
 `uc 1 RD3 1 0 :1:3 
@@ -220,8 +269,8 @@
 `uc 1 RD6 1 0 :1:6 
 `uc 1 RD7 1 0 :1:7 
 ]
-[u S556 . 1 `S538 1 . 1 0 `S547 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES556  1 e 1 @3989 ]
+[u S689 . 1 `S671 1 . 1 0 `S680 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES689  1 e 1 @3989 ]
 [s S348 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
@@ -327,68 +376,70 @@
 ]
 [u S104 . 1 `S82 1 . 1 0 `S91 1 . 1 0 `S100 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES104  1 e 1 @4082 ]
-"72 D:\Documents\GitHub\keywee\remote.X\main.c
+"69 D:\Documents\GitHub\keywee\remote.X\main.c
 [v _steps steps `ui  1 e 2 0 ]
-"178
+"70
+[v _synchronization synchronization `uc  1 e 1 0 ]
+"180
 [v _kiwi_length kiwi_length `uc  1 e 1 0 ]
-"179
+"181
 [v _kiwi_frequence kiwi_frequence `[3]uc  1 e 3 0 ]
-"236
+"255
 [v _main main `(i  1 e 2 0 ]
 {
-"243
+"262
 } 0
-"89
+"91
 [v _setup setup `(v  1 e 1 0 ]
 {
-"142
+"144
 } 0
-"80
+"82
 [v _init_debug init_debug `(v  1 e 1 0 ]
 {
-"86
+"88
 } 0
-"75
+"73
 [v _show_debug show_debug `(v  1 e 1 0 ]
 {
-"77
+"79
 } 0
 "229 D:\Documents\GitHub\keywee\remote.X\lcd.c
 [v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 {
 [v LCDWriteInt@column column `uc  1 a 1 wreg ]
 "230
-[v LCDWriteInt@string string `[3]uc  1 a 3 1 ]
+[v LCDWriteInt@string string `[3]uc  1 a 3 6 ]
 "229
 [v LCDWriteInt@column column `uc  1 a 1 wreg ]
-[v LCDWriteInt@row row `uc  1 p 1 48 ]
-[v LCDWriteInt@value value `uc  1 p 1 49 ]
+[v LCDWriteInt@row row `uc  1 p 1 3 ]
+[v LCDWriteInt@value value `uc  1 p 1 4 ]
 "232
-[v LCDWriteInt@column column `uc  1 a 1 0 ]
+[v LCDWriteInt@column column `uc  1 a 1 5 ]
 "238
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "11
-[v ___awmod@sign sign `uc  1 a 1 42 ]
-[v ___awmod@counter counter `uc  1 a 1 41 ]
+[v ___awmod@sign sign `uc  1 a 1 44 ]
+[v ___awmod@counter counter `uc  1 a 1 43 ]
 "8
-[v ___awmod@dividend dividend `i  1 p 2 37 ]
-[v ___awmod@divisor divisor `i  1 p 2 39 ]
+[v ___awmod@dividend dividend `i  1 p 2 39 ]
+[v ___awmod@divisor divisor `i  1 p 2 41 ]
 "35
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
-[v ___awdiv@quotient quotient `i  1 a 2 43 ]
+[v ___awdiv@quotient quotient `i  1 a 2 45 ]
 "12
-[v ___awdiv@sign sign `uc  1 a 1 42 ]
-[v ___awdiv@counter counter `uc  1 a 1 41 ]
+[v ___awdiv@sign sign `uc  1 a 1 44 ]
+[v ___awdiv@counter counter `uc  1 a 1 43 ]
 "8
-[v ___awdiv@dividend dividend `i  1 p 2 37 ]
-[v ___awdiv@divisor divisor `i  1 p 2 39 ]
+[v ___awdiv@dividend dividend `i  1 p 2 39 ]
+[v ___awdiv@divisor divisor `i  1 p 2 41 ]
 "42
 } 0
 "193 D:\Documents\GitHub\keywee\remote.X\lcd.c
@@ -397,7 +448,7 @@
 "195
 [v LCDWriteStr@i i `uc  1 a 1 47 ]
 "193
-[v LCDWriteStr@string string `*.35Cuc  1 p 2 43 ]
+[v LCDWriteStr@string string `*.35Cuc  1 p 2 45 ]
 "199
 } 0
 "180
@@ -406,7 +457,7 @@
 [v LCDPutChar@data data `uc  1 a 1 wreg ]
 [v LCDPutChar@data data `uc  1 a 1 wreg ]
 "182
-[v LCDPutChar@data data `uc  1 a 1 42 ]
+[v LCDPutChar@data data `uc  1 a 1 44 ]
 "184
 } 0
 "171
@@ -414,9 +465,9 @@
 {
 [v LCDGoto@column column `uc  1 a 1 wreg ]
 [v LCDGoto@column column `uc  1 a 1 wreg ]
-[v LCDGoto@row row `uc  1 p 1 42 ]
+[v LCDGoto@row row `uc  1 p 1 44 ]
 "173
-[v LCDGoto@column column `uc  1 a 1 47 ]
+[v LCDGoto@column column `uc  1 a 1 2 ]
 "178
 } 0
 "89
@@ -434,9 +485,9 @@
 {
 [v WriteByte@cmd cmd `uc  1 a 1 wreg ]
 [v WriteByte@cmd cmd `uc  1 a 1 wreg ]
-[v WriteByte@data data `uc  1 p 1 40 ]
+[v WriteByte@data data `uc  1 p 1 42 ]
 "85
-[v WriteByte@cmd cmd `uc  1 a 1 41 ]
+[v WriteByte@cmd cmd `uc  1 a 1 43 ]
 "87
 } 0
 "66
@@ -444,70 +495,71 @@
 {
 [v WriteNibble@cmd cmd `uc  1 a 1 wreg ]
 [v WriteNibble@cmd cmd `uc  1 a 1 wreg ]
-[v WriteNibble@data data `uc  1 p 1 37 ]
+[v WriteNibble@data data `uc  1 p 1 39 ]
 "68
-[v WriteNibble@cmd cmd `uc  1 a 1 39 ]
+[v WriteNibble@cmd cmd `uc  1 a 1 41 ]
 "81
 } 0
 "52
 [v _WaitLCD WaitLCD `(v  1 e 1 0 ]
 {
 "54
-[v WaitLCD@status status `uc  1 a 1 38 ]
+[v WaitLCD@status status `uc  1 a 1 40 ]
 "64
 } 0
 "21
 [v _ReadByte ReadByte `(uc  1 e 1 0 ]
 {
 "23
-[v ReadByte@status status `uc  1 a 1 37 ]
+[v ReadByte@status status `uc  1 a 1 39 ]
 "50
 } 0
-"216 D:\Documents\GitHub\keywee\remote.X\main.c
+"230 D:\Documents\GitHub\keywee\remote.X\main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"223
-[v ISR@i i `i  1 a 2 35 ]
-"233
+"237
+[v ISR@i i `i  1 a 2 37 ]
+"252
 } 0
-"209
+"211
 [v _synchronize synchronize `(v  1 e 1 0 ]
 {
-"213
+"227
 } 0
-"182
+"184
 [v _searched searched `(v  1 e 1 0 ]
 {
-"184
-[v searched@i i `i  1 a 2 18 ]
-[v searched@time time `i  1 a 2 16 ]
-"206
+"186
+[v searched@i i `i  1 a 2 20 ]
+[v searched@time time `i  1 a 2 18 ]
+[v searched@found found `i  1 a 2 16 ]
+"208
 } 0
-"157
+"159
 [v _flashlight flashlight `(v  1 e 1 0 ]
 {
-"162
+"164
 } 0
-"145
+"147
 [v _pedometer pedometer `(v  1 e 1 0 ]
 {
-"153
+"155
 } 0
-"75
+"73
 [v i2_show_debug show_debug `(v  1 e 1 0 ]
 {
-"77
+"79
 } 0
 "229 D:\Documents\GitHub\keywee\remote.X\lcd.c
 [v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 {
 [v i2LCDWriteInt@column column `uc  1 a 1 wreg ]
-[v i2LCDWriteInt@string LCDWriteInt `[3]uc  1 a 3 16 ]
+[v i2LCDWriteInt@string LCDWriteInt `[3]uc  1 a 3 17 ]
 [v i2LCDWriteInt@column column `uc  1 a 1 wreg ]
 [v i2LCDWriteInt@row row `uc  1 p 1 14 ]
 [v i2LCDWriteInt@value value `uc  1 p 1 15 ]
 "232
-[v i2LCDWriteInt@column column `uc  1 a 1 19 ]
+[v i2LCDWriteInt@column column `uc  1 a 1 16 ]
 "238
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
@@ -552,7 +604,7 @@
 [v i2LCDGoto@column column `uc  1 a 1 wreg ]
 [v i2LCDGoto@row row `uc  1 p 1 5 ]
 "173
-[v i2LCDGoto@column column `uc  1 a 1 10 ]
+[v i2LCDGoto@column column `uc  1 a 1 8 ]
 "178
 } 0
 "83
