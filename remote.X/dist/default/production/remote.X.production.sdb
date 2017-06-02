@@ -3,39 +3,39 @@
 [d edition pro ]
 [d chip 18F46K22 ]
 [d frameptr 4065 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 [v i2___awdiv __awdiv `(i  1 e 2 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 [v i2___awmod __awmod `(i  1 e 2 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"54 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftdiv.c
+"54 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"20 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftsub.c
+"20 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"44 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\fttol.c
+"44 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\lwmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcadd.c
+"10 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 3 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 3 0 ]
-"11 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcdiv.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 3 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcmul.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 3 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"21 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"21 D:\Documents\GitHub\keywee\remote.X\lcd.c
 [v _ReadByte ReadByte `(uc  1 e 1 0 ]
 [v i2_ReadByte ReadByte `(uc  1 e 1 0 ]
 "52
@@ -63,7 +63,7 @@
 "229
 [v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 [v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
-"75 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+"75 D:\Documents\GitHub\keywee\remote.X\main.c
 [v _show_debug show_debug `(v  1 e 1 0 ]
 [v i2_show_debug show_debug `(v  1 e 1 0 ]
 "80
@@ -72,15 +72,15 @@
 [v _setup setup `(v  1 e 1 0 ]
 "145
 [v _pedometer pedometer `(v  1 e 1 0 ]
-"156
+"157
 [v _flashlight flashlight `(v  1 e 1 0 ]
-"181
+"182
 [v _searched searched `(v  1 e 1 0 ]
-"207
+"209
 [v _synchronize synchronize `(v  1 e 1 0 ]
-"214
+"216
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"234
+"236
 [v _main main `(i  1 e 2 0 ]
 [s S211 . 1 `uc 1 ANSB0 1 0 :1:0 
 `uc 1 ANSB1 1 0 :1:1 
@@ -89,10 +89,10 @@
 `uc 1 ANSB4 1 0 :1:4 
 `uc 1 ANSB5 1 0 :1:5 
 ]
-"110 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k22.h
+"108 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f46k22.h
 [u S218 . 1 `S211 1 . 1 0 ]
 [v _ANSELBbits ANSELBbits `VES218  1 e 1 @3897 ]
-"7140
+"7059
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
 [s S171 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
@@ -103,7 +103,7 @@
 `uc 1 LATB6 1 0 :1:6 
 `uc 1 LATB7 1 0 :1:7 
 ]
-"7697
+"7613
 [s S180 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
@@ -124,7 +124,7 @@
 `uc 1 LATC6 1 0 :1:6 
 `uc 1 LATC7 1 0 :1:7 
 ]
-"7809
+"7724
 [s S317 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
@@ -136,9 +136,9 @@
 ]
 [u S326 . 1 `S308 1 . 1 0 `S317 1 . 1 0 ]
 [v _LATCbits LATCbits `VES326  1 e 1 @3979 ]
-"7894
+"7808
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S586 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S578 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -147,8 +147,8 @@
 `uc 1 LATD6 1 0 :1:6 
 `uc 1 LATD7 1 0 :1:7 
 ]
-"7921
-[s S595 . 1 `uc 1 LD0 1 0 :1:0 
+"7835
+[s S587 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -157,8 +157,8 @@
 `uc 1 LD6 1 0 :1:6 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S604 . 1 `S586 1 . 1 0 `S595 1 . 1 0 ]
-[v _LATDbits LATDbits `VES604  1 e 1 @3980 ]
+[u S596 . 1 `S578 1 . 1 0 `S587 1 . 1 0 ]
+[v _LATDbits LATDbits `VES596  1 e 1 @3980 ]
 [s S131 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
@@ -168,7 +168,7 @@
 `uc 1 TRISB6 1 0 :1:6 
 `uc 1 TRISB7 1 0 :1:7 
 ]
-"8312
+"8223
 [s S140 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
@@ -189,7 +189,7 @@
 `uc 1 TRISC6 1 0 :1:6 
 `uc 1 TRISC7 1 0 :1:7 
 ]
-"8534
+"8444
 [s S277 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
@@ -201,7 +201,7 @@
 ]
 [u S286 . 1 `S268 1 . 1 0 `S277 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES286  1 e 1 @3988 ]
-[s S546 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S538 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -210,8 +210,8 @@
 `uc 1 TRISD6 1 0 :1:6 
 `uc 1 TRISD7 1 0 :1:7 
 ]
-"8756
-[s S555 . 1 `uc 1 RD0 1 0 :1:0 
+"8665
+[s S547 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
 `uc 1 RD3 1 0 :1:3 
@@ -220,13 +220,13 @@
 `uc 1 RD6 1 0 :1:6 
 `uc 1 RD7 1 0 :1:7 
 ]
-[u S564 . 1 `S546 1 . 1 0 `S555 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES564  1 e 1 @3989 ]
+[u S556 . 1 `S538 1 . 1 0 `S547 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES556  1 e 1 @3989 ]
 [s S348 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
-"13251
+"13127
 [s S352 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -239,14 +239,14 @@
 [v _T2CONbits T2CONbits `VES360  1 e 1 @4026 ]
 [s S413 . 1 `uc 1 PR2 1 0 :8:0 
 ]
-"13311
+"13186
 [u S415 . 1 `S413 1 . 1 0 ]
 [v _PR2bits PR2bits `VES415  1 e 1 @4027 ]
 [s S376 . 1 `uc 1 CCP1M 1 0 :4:0 
 `uc 1 DC1B 1 0 :2:4 
 `uc 1 P1M 1 0 :2:6 
 ]
-"13363
+"13236
 [s S380 . 1 `uc 1 CCP1M0 1 0 :1:0 
 `uc 1 CCP1M1 1 0 :1:1 
 `uc 1 CCP1M2 1 0 :1:2 
@@ -260,7 +260,7 @@
 [v _CCP1CONbits CCP1CONbits `VES389  1 e 1 @4029 ]
 [s S406 . 1 `uc 1 CCPR1L 1 0 :8:0 
 ]
-"13440
+"13311
 [u S408 . 1 `S406 1 . 1 0 ]
 [v _CCPR1Lbits CCPR1Lbits `VES408  1 e 1 @4030 ]
 [s S228 . 1 `uc 1 INT1IF 1 0 :1:0 
@@ -272,7 +272,7 @@
 `uc 1 INT1IP 1 0 :1:6 
 `uc 1 INT2IP 1 0 :1:7 
 ]
-"16789
+"16605
 [s S237 . 1 `uc 1 INT1F 1 0 :1:0 
 `uc 1 INT2F 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -287,7 +287,7 @@
 [s S47 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
-"16879
+"16694
 [s S50 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
@@ -311,7 +311,7 @@
 `uc 1 PEIE_GIEL 1 0 :1:6 
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
-"16956
+"16770
 [s S91 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
@@ -327,16 +327,16 @@
 ]
 [u S104 . 1 `S82 1 . 1 0 `S91 1 . 1 0 `S100 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES104  1 e 1 @4082 ]
-"72 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+"72 D:\Documents\GitHub\keywee\remote.X\main.c
 [v _steps steps `ui  1 e 2 0 ]
-"177
-[v _kiwi_length kiwi_length `uc  1 e 1 0 ]
 "178
+[v _kiwi_length kiwi_length `uc  1 e 1 0 ]
+"179
 [v _kiwi_frequence kiwi_frequence `[3]uc  1 e 3 0 ]
-"234
+"236
 [v _main main `(i  1 e 2 0 ]
 {
-"241
+"243
 } 0
 "89
 [v _setup setup `(v  1 e 1 0 ]
@@ -353,7 +353,7 @@
 {
 "77
 } 0
-"229 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"229 D:\Documents\GitHub\keywee\remote.X\lcd.c
 [v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 {
 [v LCDWriteInt@column column `uc  1 a 1 wreg ]
@@ -367,7 +367,7 @@
 [v LCDWriteInt@column column `uc  1 a 1 0 ]
 "238
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "11
@@ -378,7 +378,7 @@
 [v ___awmod@divisor divisor `i  1 p 2 39 ]
 "35
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
@@ -391,7 +391,7 @@
 [v ___awdiv@divisor divisor `i  1 p 2 39 ]
 "42
 } 0
-"193 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"193 D:\Documents\GitHub\keywee\remote.X\lcd.c
 [v _LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
 {
 "195
@@ -463,30 +463,30 @@
 [v ReadByte@status status `uc  1 a 1 37 ]
 "50
 } 0
-"214 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\main.c
+"216 D:\Documents\GitHub\keywee\remote.X\main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"221
+"223
 [v ISR@i i `i  1 a 2 35 ]
-"231
+"233
 } 0
-"207
+"209
 [v _synchronize synchronize `(v  1 e 1 0 ]
 {
-"211
+"213
 } 0
-"181
+"182
 [v _searched searched `(v  1 e 1 0 ]
 {
-"183
+"184
 [v searched@i i `i  1 a 2 18 ]
 [v searched@time time `i  1 a 2 16 ]
-"204
+"206
 } 0
-"156
+"157
 [v _flashlight flashlight `(v  1 e 1 0 ]
 {
-"161
+"162
 } 0
 "145
 [v _pedometer pedometer `(v  1 e 1 0 ]
@@ -498,7 +498,7 @@
 {
 "77
 } 0
-"229 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"229 D:\Documents\GitHub\keywee\remote.X\lcd.c
 [v i2_LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
 {
 [v i2LCDWriteInt@column column `uc  1 a 1 wreg ]
@@ -510,7 +510,7 @@
 [v i2LCDWriteInt@column column `uc  1 a 1 19 ]
 "238
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
 [v i2___awmod __awmod `(i  1 e 2 0 ]
 {
 [v i2___awmod@sign __awmod `uc  1 a 1 5 ]
@@ -519,7 +519,7 @@
 [v i2___awmod@divisor divisor `i  1 p 2 2 ]
 "35
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 [v i2___awdiv __awdiv `(i  1 e 2 0 ]
 {
 [v i2___awdiv@quotient __awdiv `i  1 a 2 12 ]
@@ -529,7 +529,7 @@
 [v i2___awdiv@divisor divisor `i  1 p 2 8 ]
 "42
 } 0
-"193 C:\Users\Lecoq\Documents\GitHub\keywee\remote.X\lcd.c
+"193 D:\Documents\GitHub\keywee\remote.X\lcd.c
 [v i2_LCDWriteStr LCDWriteStr `(v  1 e 1 0 ]
 {
 [v i2LCDWriteStr@i LCDWriteStr `uc  1 a 1 10 ]

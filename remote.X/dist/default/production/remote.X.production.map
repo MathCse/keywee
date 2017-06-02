@@ -1,11 +1,11 @@
-Microchip MPLAB XC8 Compiler V1.42 ()
+Microchip MPLAB XC8 Compiler V1.41 ()
 
 Linker command line:
 
--W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.42\dat\en_msgs.txt -cs \
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.41\dat\en_msgs.txt -cs \
   -h+dist/default/production\remote.X.production.sym \
   --cmf=dist/default/production\remote.X.production.cmf -z -Q18F46K22 \
-  -oC:\Users\Lecoq\AppData\Local\Temp\sdpk.2 \
+  -oC:\Users\ISEN\AppData\Local\Temp\sko.2 \
   -Mdist/default/production/remote.X.production.map -E1 -ver=XC8 \
   -ASTACK=069h-0f37h -pstack=STACK -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh \
   -ASMALLCONST=01000h-010FFhx240 -AMEDIUMCONST=01000h-0FFFFh \
@@ -26,7 +26,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj \
+  C:\Users\ISEN\AppData\Local\Temp\sko.obj \
   dist/default/production\remote.X.production.obj 
 
 Object code version is 3.11
@@ -39,7 +39,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Lecoq\AppData\Local\Temp\sdpk.obj
+C:\Users\ISEN\AppData\Local\Temp\sko.obj
                 init                                 DC       DC        4        4       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
@@ -275,7 +275,7 @@ _LATD                    (abs)        000F8C
 _LATDbits                (abs)        000F8C
 _LCDClear                text11       0017A2
 _LCDGoto                 text9        001678
-_LCDGoto$669             cstackCOMRAM 00002E
+_LCDGoto$661             cstackCOMRAM 00002E
 _LCDInit                 text10       00110C
 _LCDPutChar              text8        001812
 _LCDWriteInt             text4        00154A
@@ -688,7 +688,7 @@ i2WriteByte@data         cstackCOMRAM 000004
 i2WriteNibble@cmd        cstackCOMRAM 000003
 i2WriteNibble@data       cstackCOMRAM 000001
 i2_LCDGoto               text27       0016B2
-i2_LCDGoto$669           cstackCOMRAM 000009
+i2_LCDGoto$661           cstackCOMRAM 000009
 i2_LCDPutChar            text26       001836
 i2_LCDWriteInt           text22       0015A2
 i2_LCDWriteStr           text25       00137C
@@ -725,7 +725,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 234 in file "main.c"
+		line 236 in file "main.c"
  Parameters:    Size  Location     Type
   argc            2    4[BANK0 ] int 
   argv            3    6[BANK0 ] PTR PTR unsigned char 
@@ -885,7 +885,7 @@ Total ram usage:        6 bytes
 
  *************** function ___awmod *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c"
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c"
  Parameters:    Size  Location     Type
   dividend        2   37[COMRAM] int 
   divisor         2   39[COMRAM] int 
@@ -918,7 +918,7 @@ Total ram usage:        6 bytes
 
  *************** function ___awdiv *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c"
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c"
  Parameters:    Size  Location     Type
   dividend        2   37[COMRAM] int 
   divisor         2   39[COMRAM] int 
@@ -1244,7 +1244,7 @@ Total ram usage:        1 bytes
 
  *************** function _ISR *****************
  Defined at:
-		line 214 in file "main.c"
+		line 216 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1277,7 +1277,7 @@ Total ram usage:       17 bytes
 
  *************** function _synchronize *****************
  Defined at:
-		line 207 in file "main.c"
+		line 209 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1306,7 +1306,7 @@ Total ram usage:        0 bytes
 
  *************** function _searched *****************
  Defined at:
-		line 181 in file "main.c"
+		line 182 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1339,7 +1339,7 @@ Total ram usage:        6 bytes
 
  *************** function _flashlight *****************
  Defined at:
-		line 156 in file "main.c"
+		line 157 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1465,7 +1465,7 @@ Total ram usage:        6 bytes
 
  *************** function i2___awmod *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c"
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c"
  Parameters:    Size  Location     Type
   dividend        2    0[COMRAM] int 
   divisor         2    2[COMRAM] int 
@@ -1497,7 +1497,7 @@ Total ram usage:        6 bytes
 
  *************** function i2___awdiv *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c"
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c"
  Parameters:    Size  Location     Type
   dividend        2    6[COMRAM] int 
   divisor         2    8[COMRAM] int 
@@ -1748,10 +1748,10 @@ Total ram usage:        1 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 		___awdiv       		CODE           	11F4	0000	133
 
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c estimated size: 133
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c estimated size: 133
 
 shared
 		i2_WaitLCD     		CODE           	1848	0000	19
@@ -1769,6 +1769,11 @@ shared
 
 shared estimated size: 750
 
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+		___awmod       		CODE           	13FC	0000	113
+
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c estimated size: 113
+
 lcd.c
 		_LCDClear      		CODE           	17A2	0000	33
 		_LCDPutChar    		CODE           	1812	0000	19
@@ -1782,11 +1787,6 @@ lcd.c
 		_LCDGoto       		CODE           	1678	0000	59
 
 lcd.c estimated size: 726
-
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
-		___awmod       		CODE           	13FC	0000	113
-
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c estimated size: 113
 
 main.c
 		_ISR           		CODE           	0008	0000	213

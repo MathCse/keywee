@@ -243,6 +243,7 @@ __ptext9 1678 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
 ReadByte@status 26 0 COMRAM 1
+i2_LCDGoto$661 9 0 COMRAM 1
 __end_of_WaitLCD 1836 0 CODE 0
 __CFG_HFOFST$ON 0 0 ABS 0
 LCDWriteStr@i 30 0 COMRAM 1
@@ -314,6 +315,7 @@ __size_of_main 0 0 ABS 0
 __Hconst 0 0 CONST 0
 __size_of_show_debug 0 0 ABS 0
 __Lconst 0 0 CONST 0
+_LCDGoto$661 2E 0 COMRAM 1
 __size_of_init_debug 0 0 ABS 0
 i2ReadByte@status 1 0 COMRAM 1
 i2___awdiv@divisor 9 0 COMRAM 1
@@ -444,7 +446,6 @@ intlevel0 0 0 CODE 0
 __end_of_flashlight 17DE 0 CODE 0
 intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
-i2_LCDGoto$669 9 0 COMRAM 1
 intlevel3 0 0 CODE 0
 LCDWriteInt@value 32 0 COMRAM 1
 i2LCDWriteInt@value 10 0 COMRAM 1
@@ -465,7 +466,6 @@ __size_of___awmod 0 0 ABS 0
 i2WriteByte@cmd 5 0 COMRAM 1
 __initialization 16EC 0 CODE 0
 i2LCDWriteStr@i B 0 COMRAM 1
-_LCDGoto$669 2E 0 COMRAM 1
 ___awmod@dividend 26 0 COMRAM 1
 __activetblptr 2 0 ABS 0
 ___awmod@counter 2A 0 COMRAM 1
@@ -486,8 +486,8 @@ cstackBANK0 60 68 BANK0 60 1
 text18 101E 1899 CODE 101E 0
 %locals
 dist/default/production\remote.X.production.obj
-C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k22.h
-C:\Users\Lecoq\AppData\Local\Temp\sdpk.
+C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f46k22.h
+C:\Users\ISEN\AppData\Local\Temp\sko.
 1270 16EC 0 CODE 0
 1272 16EC 0 CODE 0
 1275 16EC 0 CODE 0
@@ -515,9 +515,9 @@ C:\Users\Lecoq\AppData\Local\Temp\sdpk.
 1333 1718 0 CODE 0
 1334 171A 0 CODE 0
 main.c
-234 1890 0 CODE 0
 236 1890 0 CODE 0
-238 1894 0 CODE 0
+238 1890 0 CODE 0
+240 1894 0 CODE 0
 main.c
 89 14DC 0 CODE 0
 91 14DC 0 CODE 0
@@ -576,7 +576,7 @@ lcd.c
 236 1588 0 CODE 0
 237 1594 0 CODE 0
 238 15A0 0 CODE 0
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
 8 13FC 0 CODE 0
 13 13FC 0 CODE 0
 14 1400 0 CODE 0
@@ -597,7 +597,7 @@ C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
 32 1454 0 CODE 0
 33 145A 0 CODE 0
 34 1462 0 CODE 0
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 8 11F4 0 CODE 0
 14 11F4 0 CODE 0
 15 11F8 0 CODE 0
@@ -731,44 +731,44 @@ lcd.c
 lcd.c
 50 8 0 CODE 0
 main.c
-214 8 0 CODE 0
-216 42 0 CODE 0
-217 48 0 CODE 0
-219 4E 0 CODE 0
-221 52 0 CODE 0
-222 5A 0 CODE 0
-223 72 0 CODE 0
-224 76 0 CODE 0
-222 86 0 CODE 0
-227 8C 0 CODE 0
-229 9C 0 CODE 0
-231 A0 0 CODE 0
+216 8 0 CODE 0
+218 42 0 CODE 0
+219 48 0 CODE 0
+221 4E 0 CODE 0
+223 52 0 CODE 0
+224 5A 0 CODE 0
+225 72 0 CODE 0
+226 76 0 CODE 0
+224 86 0 CODE 0
+229 8C 0 CODE 0
+231 9C 0 CODE 0
+233 A0 0 CODE 0
 main.c
-207 1886 0 CODE 0
-210 1886 0 CODE 0
-211 188E 0 CODE 0
+209 1886 0 CODE 0
+212 1886 0 CODE 0
+213 188E 0 CODE 0
 main.c
-181 101E 0 CODE 0
-183 101E 0 CODE 0
-186 102E 0 CODE 0
-188 1030 0 CODE 0
-189 1052 0 CODE 0
-191 1090 0 CODE 0
-193 1094 0 CODE 0
-194 10AC 0 CODE 0
-195 10BA 0 CODE 0
-196 10CA 0 CODE 0
-193 10DE 0 CODE 0
-186 10E4 0 CODE 0
-201 1102 0 CODE 0
-202 1106 0 CODE 0
-203 1108 0 CODE 0
-204 110A 0 CODE 0
+182 101E 0 CODE 0
+184 101E 0 CODE 0
+187 102E 0 CODE 0
+189 1030 0 CODE 0
+190 1052 0 CODE 0
+192 1090 0 CODE 0
+194 1094 0 CODE 0
+195 10AC 0 CODE 0
+197 10BA 0 CODE 0
+198 10CA 0 CODE 0
+194 10DE 0 CODE 0
+187 10E4 0 CODE 0
+203 1102 0 CODE 0
+204 1106 0 CODE 0
+205 1108 0 CODE 0
+206 110A 0 CODE 0
 main.c
-156 17C2 0 CODE 0
-158 17C2 0 CODE 0
-160 17DA 0 CODE 0
-161 17DC 0 CODE 0
+157 17C2 0 CODE 0
+159 17C2 0 CODE 0
+161 17DA 0 CODE 0
+162 17DC 0 CODE 0
 main.c
 145 187A 0 CODE 0
 147 187A 0 CODE 0
@@ -787,7 +787,7 @@ lcd.c
 236 15D8 0 CODE 0
 237 15E2 0 CODE 0
 238 15EE 0 CODE 0
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
 8 146C 0 CODE 0
 13 146C 0 CODE 0
 14 1470 0 CODE 0
@@ -808,7 +808,7 @@ C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awmod.c
 32 14C4 0 CODE 0
 33 14CA 0 CODE 0
 34 14D2 0 CODE 0
-C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
 8 1278 0 CODE 0
 14 1278 0 CODE 0
 15 127C 0 CODE 0
